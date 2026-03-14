@@ -35,8 +35,3 @@ runtime engine APIs for inspection and diagnostics.
 1. `npm install`
 2. `npm start` (or `node hakari-backend/server.js`)
 
-## GitHub notes
-
-- Don’t commit `.env`.
-- Keep `node_modules/` out of VCS.
-- Add logs/ run_data/ temp to `.gitignore`.
