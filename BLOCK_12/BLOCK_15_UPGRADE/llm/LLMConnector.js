@@ -239,6 +239,18 @@ export class LLMConnector {
         context
       )
 
+    if(this.provider==='gemini')
+      return this._callGemini(
+        queryText,
+        context
+      )
+
+    if(this.provider==='groq')
+      return this._callGroq(
+        queryText,
+        context
+      )
+
     return this._callOpenAI(
       queryText,
       context
@@ -351,6 +363,114 @@ ${queryText}`
   }
 
   /* ------------------------------------------------ */
+  /* GEMINI                                           */
+  /* ------------------------------------------------ */
+
+  async _callGemini(queryText,context){
+
+    const response =
+      await this._fetchWithTimeout(
+        `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:generateContent?key=${this.apiKey}`,
+        {
+          method:'POST',
+          headers:{
+            'Content-Type':'application/json'
+          },
+          body:JSON.stringify({
+            systemInstruction: {
+              parts: [{text: this.systemPrompt}]
+            },
+            contents:[
+              {
+                role:'user',
+                parts:[{
+                  text:
+`${context}
+
+---
+
+User query:
+${queryText}`
+                }]
+              }
+            ]
+          })
+        }
+      )
+
+    if(!response.ok)
+      throw new Error(
+        `Gemini API ${response.status}`
+      )
+
+    const data =
+      await response.json()
+
+    return (
+      data?.candidates?.[0]
+        ?.content
+        ?.parts?.[0]
+        ?.text
+      ?? ''
+    )
+  }
+
+  /* ------------------------------------------------ */
+  /* GROQ                                             */
+  /* ------------------------------------------------ */
+
+  async _callGroq(queryText,context){
+
+    const response =
+      await this._fetchWithTimeout(
+        'https://api.groq.com/openai/v1/chat/completions',
+        {
+          method:'POST',
+          headers:{
+            'Content-Type':'application/json',
+            'Authorization':
+              `Bearer ${this.apiKey}`
+          },
+          body:JSON.stringify({
+            model:this.model,
+            max_tokens:this.maxTokens,
+            messages:[
+              {
+                role:'system',
+                content:this.systemPrompt
+              },
+              {
+                role:'user',
+                content:
+`${context}
+
+---
+
+User query:
+${queryText}`
+              }
+            ]
+          })
+        }
+      )
+
+    if(!response.ok)
+      throw new Error(
+        `Groq API ${response.status}`
+      )
+
+    const data =
+      await response.json()
+
+    return (
+      data?.choices?.[0]
+        ?.message
+        ?.content
+      ?? ''
+    )
+  }
+
+  /* ------------------------------------------------ */
   /* FALLBACK RESPONSE                                */
   /* ------------------------------------------------ */
 
@@ -413,6 +533,12 @@ ${context}`
   /* ------------------------------------------------ */
 
   _defaultModel(){
+
+    if(this.provider==='gemini')
+      return 'gemini-1.5-flash'
+      
+    if(this.provider==='groq')
+      return 'llama3-8b-8192'
 
     return this.provider==='anthropic'
       ? 'claude-sonnet-4-20250514'

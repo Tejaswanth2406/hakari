@@ -1,4 +1,4 @@
-﻿/**
+/**
  * HAKARI v3 � main.js
  * ---------------------------------------------
  * Entry point. Lives inside BLOCK_12/
@@ -77,40 +77,205 @@ window.addEventListener('DOMContentLoaded', () => {
 
   scheduler.start();
 
-  // -- Chat: talk to backend --------------------
-  async function askHAKARI(question) {
-    const response = await fetch('http://localhost:5000/ask', {
-      method:  'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify({ question, user: 'User1' }),
-    });
-    const data = await response.json();
-    return data.answer;
+  // -- Chat: Dialogue UI ------------------------
+  const chatWidget   = document.getElementById('chat-widget');
+  const chatToggle   = document.getElementById('chat-toggle-btn');
+  const chatClose    = document.getElementById('chat-close-btn');
+  const chatMessages = document.getElementById('chat-messages');
+  const chatInput    = document.getElementById('chat-input');
+  const chatSendBtn  = document.getElementById('chat-send-btn');
+  const chatMicBtn   = document.getElementById('chat-mic-btn');
+
+  // Center prompt components
+  const centerOverlay = document.getElementById('center-prompt-overlay');
+  const centerInput   = document.getElementById('center-chat-input');
+  const centerSendBtn = document.getElementById('center-send-btn');
+  const centerMicBtn  = document.getElementById('center-mic-btn');
+
+  let chatOpen = false;
+
+  const toggleChat = () => {
+    chatOpen = !chatOpen;
+    if (chatOpen) {
+      chatWidget.style.transform = 'translateY(0)';
+      chatToggle.style.transform = 'translateY(150%)';
+      chatInput.focus();
+    } else {
+      chatWidget.style.transform = 'translateY(150%)';
+      chatToggle.style.transform = 'translateY(0)';
+    }
+  };
+
+  if (chatToggle && chatClose) {
+    chatToggle.addEventListener('click', toggleChat);
+    chatClose.addEventListener('click', toggleChat);
   }
 
-  const sendBtn       = document.getElementById('sendBtn');
-  const questionInput = document.getElementById('questionInput');
-  const answerDiv     = document.getElementById('answerDiv');
+  const appendMessage = (sender, text, isError = false) => {
+    const msgDiv = document.createElement('div');
+    msgDiv.style.fontFamily = 'var(--font-mono)';
+    msgDiv.style.fontSize = '0.65rem';
+    msgDiv.style.lineHeight = '1.4';
+    
+    if (sender === 'You') {
+      msgDiv.style.color = 'var(--ink)';
+      msgDiv.innerHTML = `<span style="color:var(--sage)">▶ YOU</span><br/>${text}`;
+    } else if (sender === 'HAKARI') {
+      msgDiv.style.color = isError ? 'var(--terra)' : 'var(--ink)';
+      msgDiv.innerHTML = `<span style="color:var(--gold)">■ HAKARI</span><br/>${text}`;
+    }
+    
+    chatMessages.appendChild(msgDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  };
 
-  if (sendBtn && questionInput && answerDiv) {
-    sendBtn.addEventListener('click', async () => {
-      const input = questionInput.value.trim();
-      if (!input) return;
-      answerDiv.innerHTML += `<p><b>You:</b> ${input}</p>`;
-      questionInput.value = '';
-      try {
-        const answer = await askHAKARI(input);
-        answerDiv.innerHTML += `<p><b>HAKARI:</b> ${answer}</p>`;
-      } catch (err) {
-        answerDiv.innerHTML += `<p style="color:red"><b>Error:</b> Backend offline � is server.js running?</p>`;
-        console.error('[Chat]', err);
+  const speakText = (text) => {
+    if(!('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    // Simple scrub of markdown chars for basic speech
+    utterance.text = text.replace(/[*_#`]/g, '');
+    utterance.rate = 1.05;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  const handleSend = async (customText) => {
+    const text = (typeof customText === 'string') ? customText : chatInput.value.trim();
+    if (!text) return;
+    
+    appendMessage('You', text);
+    chatInput.value = '';
+    
+    // Create typing indicator
+    const typingDiv = document.createElement('div');
+    typingDiv.style.fontFamily = 'var(--font-mono)';
+    typingDiv.style.fontSize = '0.65rem';
+    typingDiv.style.color = 'var(--ink3)';
+    typingDiv.innerText = 'System reasoning...';
+    chatMessages.appendChild(typingDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    try {
+      // Use the internal LLM connector
+      const res = await hakari.query(text);
+      let replyTxt = '';
+      if(typeof res === 'object' && res.response) {
+        replyTxt = res.response;
+      } else if (typeof res === 'string') {
+        replyTxt = res;
+      } else {
+        replyTxt = 'Query complete. No text response from API.';
       }
-      answerDiv.scrollTop = answerDiv.scrollHeight;
-    });
+      
+      chatMessages.removeChild(typingDiv);
+      appendMessage('HAKARI', replyTxt);
+      speakText(replyTxt);
+      
+    } catch (err) {
+      chatMessages.removeChild(typingDiv);
+      appendMessage('HAKARI', `Query Failed: ${err.message}`, true);
+    }
+  };
 
-    questionInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendBtn.click(); }
+  if (chatSendBtn && chatInput) {
+    chatSendBtn.addEventListener('click', () => handleSend());
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) { 
+        e.preventDefault(); 
+        handleSend(); 
+      }
     });
+  }
+
+  const executeCenterSearch = () => {
+    const text = centerInput?.value?.trim();
+    if (!text) return;
+    
+    if (centerOverlay) {
+      centerOverlay.style.opacity = '0';
+      centerOverlay.style.pointerEvents = 'none';
+    }
+    
+    if (!chatOpen) toggleChat();
+    
+    centerInput.value = '';
+    handleSend(text);
+  };
+
+  if (centerSendBtn && centerInput) {
+    centerSendBtn.addEventListener('click', executeCenterSearch);
+    centerInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        executeCenterSearch();
+      }
+    });
+  }
+
+  // Web Speech API Integration
+  if (('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) {
+    const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRec();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    
+    let isRecording = false;
+    let activeInputTarget = null;
+    let activeMicBtn = null;
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      if (activeInputTarget) {
+        activeInputTarget.value += (activeInputTarget.value ? ' ' : '') + transcript;
+      }
+      if (activeMicBtn) {
+        activeMicBtn.style.color = activeMicBtn === centerMicBtn ? 'var(--paper)' : 'var(--ink)';
+        activeMicBtn.style.animation = 'none';
+      }
+      isRecording = false;
+    };
+
+    const resetMicState = () => {
+      if (activeMicBtn) {
+        activeMicBtn.style.color = activeMicBtn === centerMicBtn ? 'var(--paper)' : 'var(--ink)';
+        activeMicBtn.style.animation = 'none';
+      }
+      isRecording = false;
+    }
+
+    recognition.onerror = resetMicState;
+    recognition.onend = resetMicState;
+
+    const bindMic = (btn, inputEl) => {
+      if(!btn) return;
+      btn.addEventListener('click', () => {
+        window.speechSynthesis.cancel();
+        if (!isRecording) {
+          activeInputTarget = inputEl;
+          activeMicBtn = btn;
+          recognition.start();
+          btn.style.color = 'var(--terra)';
+          btn.style.animation = 'pulseInk 1s infinite alternate';
+          isRecording = true;
+        } else {
+          recognition.stop();
+          isRecording = false;
+        }
+      });
+    };
+
+    bindMic(chatMicBtn, chatInput);
+    bindMic(centerMicBtn, centerInput);
+
+  } else {
+    if(chatMicBtn) {
+      chatMicBtn.title = "Speech API not supported in this browser.";
+      chatMicBtn.style.opacity = '0.5';
+    }
+    if(centerMicBtn) {
+      centerMicBtn.title = "Speech API not supported in this browser.";
+      centerMicBtn.style.opacity = '0.5';
+    }
   }
 
   // -- Expose globals for console debugging ----
