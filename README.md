@@ -12,31 +12,6 @@
                                          v3
 ```
 
-> **"HAKARI v3 is not just another chatbot. It's a running cognitive simulation engine —
-> with physics, entropy, cascade detection, and live learning regression, all ticking in real time."**
-> — HAKARI v3 · Achieved Architecture
-
----
-
-## ⚡ STATUS: ONLINE · tick_1541
-
-```
-┌─────────────────────────────────────────────────────────┐
-│  SYSTEM STATE · LIVE                                    │
-├──────────────────────┬──────────────────────────────────┤
-│  version             │  HAKARI_v3                       │
-│  engine              │  Cognitive Simulation            │
-│  physics             │  RUNNING · tick-loop             │
-│  entropy             │  S=2.840 ⚠ spike detected        |
-│  csd_status          │  ⚠ TIPPING POINT RISK            │
-│  learning            │  J declining · tracked           │
-│  memory              │  MongoDB                         │
-│  ai_engine           │  GPT (OpenAI)                    │
-└──────────────────────┴──────────────────────────────────┘
-```
-
----
-
 ## 🧠 WHAT IS HAKARI?
 
 HAKARI v3 is a **research-grade cognitive simulation engine** built on three interlocking subsystems running simultaneously inside a single tick-loop scheduler — every second the engine is alive.
