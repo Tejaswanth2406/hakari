@@ -25,7 +25,7 @@
 │  version             │  HAKARI_v3                       │
 │  engine              │  Cognitive Simulation            │
 │  physics             │  RUNNING · tick-loop             │
-│  entropy             │  S=2.840 ⚠ spike detected        │
+│  entropy             │  S=2.840 ⚠ spike detected        |
 │  csd_status          │  ⚠ TIPPING POINT RISK            │
 │  learning            │  J declining · tracked           │
 │  memory              │  MongoDB                         │
@@ -156,19 +156,19 @@ __hakari.downloadLog()           // Export full session as JSON
 │                   │  Edge dynamics · Topology · Weakening   │
 ├───────────────────┼─────────────────────────────────────────┤
 │  BLOCK 5          │  Thermodynamics Layer                   │
-│                   │  Heat diffusion · Phase transitions      │
+│                   │  Heat diffusion · Phase transitions     │
 ├───────────────────┼─────────────────────────────────────────┤
 │  BLOCK 6          │  Intelligence & Decision                │
 │                   │  Bayesian inference · predictNext(n)    │
 ├───────────────────┼─────────────────────────────────────────┤
 │  BLOCK 7          │  Evolutionary Mechanisms                │
-│                   │  Genetic mutation · J-metric regression  │
+│                   │  Genetic mutation · J-metric regression │
 ├───────────────────┼─────────────────────────────────────────┤
 │  BLOCK 8          │  Knowledge Diffusion & Memory           │
-│                   │  Propagation · MongoDB integration       │
+│                   │  Propagation · MongoDB integration      │
 ├───────────────────┼─────────────────────────────────────────┤
 │  BLOCK 9          │  Knowledge Synthesis                    │
-│                   │  Concept formation · LLM context inject  │
+│                   │  Concept formation · LLM context inject │
 ├───────────────────┼─────────────────────────────────────────┤
 │  BLOCK 10         │  Runtime + Visualization                │
 │                   │  __hakari · __scheduler · BLOCK_15_UPG  │
