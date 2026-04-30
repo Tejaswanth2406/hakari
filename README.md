@@ -1,3 +1,5 @@
+<img width="1366" height="1228" alt="image" src="https://github.com/user-attachments/assets/8d0668a2-5b5e-454d-af77-b4d416c87ec8" />
+
 # HAKARI v3 — Cognitive Simulation Engine
 
 ```
