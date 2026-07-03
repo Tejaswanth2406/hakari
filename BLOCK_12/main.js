@@ -14,8 +14,12 @@ import { Hakari }    from './BLOCK_15_UPGRADE/Hakari.js';
 import { Scheduler } from './BLOCK_15_UPGRADE/Scheduler.js';
 import { Controls }  from './Controls.js';  // ? fixed: was ControlClass
 
-const LLM_API_KEY  = null;
-const LLM_PROVIDER = 'anthropic';   // 'anthropic' | 'openai'
+// Keys are loaded from hakari.config.js (gitignored) via a <script> tag in index.html
+// See hakari.config.template.js for the format.
+const _cfg         = window.HAKARI_CONFIG ?? {};
+const LLM_API_KEY  = _cfg.LLM_API_KEY  ?? null;
+const LLM_PROVIDER = _cfg.LLM_PROVIDER ?? 'gemini';
+const LLM_MODEL    = _cfg.LLM_MODEL    ?? 'gemini-2.0-flash';
 
 // -- BOOT --------------------------------------
 window.addEventListener('DOMContentLoaded', () => {
@@ -30,9 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     llm: {
       apiKey:   LLM_API_KEY,
       provider: LLM_PROVIDER,
-      model:    LLM_PROVIDER === 'anthropic'
-        ? 'claude-sonnet-4-20250514'
-        : 'gpt-4o-mini',
+      model:    LLM_MODEL,
     },
 
     embedder: {
@@ -97,11 +99,15 @@ window.addEventListener('DOMContentLoaded', () => {
   const toggleChat = () => {
     chatOpen = !chatOpen;
     if (chatOpen) {
-      chatWidget.style.transform = 'translateY(0)';
+      chatWidget.style.opacity = '1';
+      chatWidget.style.pointerEvents = 'auto';
+      chatWidget.style.transform = 'translate(-50%, -50%) scale(1)';
       chatToggle.style.transform = 'translateY(150%)';
       chatInput.focus();
     } else {
-      chatWidget.style.transform = 'translateY(150%)';
+      chatWidget.style.opacity = '0';
+      chatWidget.style.pointerEvents = 'none';
+      chatWidget.style.transform = 'translate(-50%, -45%) scale(0.95)';
       chatToggle.style.transform = 'translateY(0)';
     }
   };
@@ -191,11 +197,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const text = centerInput?.value?.trim();
     if (!text) return;
     
-    if (centerOverlay) {
-      centerOverlay.style.opacity = '0';
-      centerOverlay.style.pointerEvents = 'none';
-    }
-    
+    // Open chat widget without hiding the center overlay — it stays visible always
     if (!chatOpen) toggleChat();
     
     centerInput.value = '';

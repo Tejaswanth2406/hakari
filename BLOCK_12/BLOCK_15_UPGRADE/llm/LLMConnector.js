@@ -485,8 +485,7 @@ ${queryText}`
         )
         .join(', ')
 
-    return
-`[HAKARI field response — no API key]
+    return `[HAKARI field response — no API key]
 
 Top nodes: ${top || 'none'}
 
@@ -535,7 +534,7 @@ ${context}`
   _defaultModel(){
 
     if(this.provider==='gemini')
-      return 'gemini-1.5-flash'
+      return 'gemini-2.0-flash'
       
     if(this.provider==='groq')
       return 'llama3-8b-8192'

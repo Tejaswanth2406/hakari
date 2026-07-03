@@ -8,6 +8,8 @@
 
   <!-- Favicon -->
   <link rel="icon" href="./favicon.jpg" type="image/jpeg">
+
+  <style>
     *,
     *::before,
     *::after {
@@ -1121,12 +1123,12 @@
       <div class="s-head">API Key</div>
       <div class="api-sec">
         <select id="api-provider-select" style="width:100%;margin-bottom:0.3rem;background:rgba(28,26,20,0.06);border:1px solid var(--warm-line);border-bottom:1.5px solid var(--ink3);color:var(--ink);font-family:var(--font-mono);font-size:0.6rem;padding:0.38rem 0.5rem;outline:none;">
+          <option value="gemini" selected>Gemini 2.0 Flash ✓</option>
           <option value="groq">Groq (Free/Fast)</option>
-          <option value="gemini">Gemini (Free)</option>
           <option value="anthropic">Anthropic Claude</option>
           <option value="openai">OpenAI GPT</option>
         </select>
-        <input type="password" id="api-key-input" placeholder="sk-… or sk-ant-…" autocomplete="off" />
+        <input type="password" id="api-key-input" placeholder="Key pre-loaded — or override here" autocomplete="off" />
         <button class="btn gold" id="btn-api-apply">Apply Key</button>
       </div>
 
@@ -1273,7 +1275,7 @@
   <div class="notice" id="notice"></div>
 
   <!-- ═══ CHATGPT LIKE CHAT BOX ═══════════════════════════════ -->
-  <div id="chat-widget" style="position:fixed;bottom:30px;right:225px;width:340px;height:450px;background:var(--paper);border:2px solid var(--ink);z-index:100;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(28,26,20,0.2);transform:translateY(150%);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);">
+  <div id="chat-widget" style="position:fixed;top:50%;left:50%;width:550px;height:600px;background:var(--paper);border:2px solid var(--ink);z-index:100;display:flex;flex-direction:column;box-shadow:0 12px 48px rgba(28,26,20,0.25);opacity:0;pointer-events:none;transform:translate(-50%, -45%) scale(0.95);transition:all 0.4s cubic-bezier(0.16,1,0.3,1);">
     <!-- Chat Header -->
     <div style="background:var(--ink);color:var(--paper);font-family:var(--font-mono);font-size:0.65rem;padding:0.6rem 1rem;display:flex;justify-content:space-between;align-items:center;letter-spacing:0.15em;">
       <span>HAKARI DIALOGUE</span>
@@ -1299,6 +1301,9 @@
   </button>
 
   <!-- ═══ SCRIPTS ═══════════════════════════════ -->
+
+  <!-- Runtime config (gitignored). Copy hakari.config.template.js → hakari.config.js and add your key. -->
+  <script src="./hakari.config.js" onerror="console.warn('[HAKARI] hakari.config.js not found — running without API key. Copy hakari.config.template.js to hakari.config.js and add your key.')"></script>
 
   <script type="module" src="./BLOCK_12/main.js"></script>
 
@@ -1550,14 +1555,23 @@
 
     // API key
     document.getElementById('btn-api-apply')?.addEventListener('click', () => {
-      const key = document.getElementById('api-key-input')?.value?.trim();
-      const provider = document.getElementById('api-provider-select')?.value || 'anthropic';
-      if (!key || !window.__hakari) return;
-      window.__hakari.llmConnector.apiKey = key;
-      window.__hakari.llmConnector.provider = provider;
-      window.__hakari.llmConnector.model = window.__hakari.llmConnector._defaultModel();
-      showNotice(`${provider.toUpperCase()} KEY APPLIED`);
-      document.getElementById('api-key-input').value = '';
+      const rawKey   = document.getElementById('api-key-input')?.value?.trim();
+      const provider = document.getElementById('api-provider-select')?.value || 'gemini';
+      const h        = window.__hakari;
+      if (!h) return;
+      // If user typed a new key use it; otherwise keep whatever is already loaded
+      if (rawKey) {
+        h.llmConnector.apiKey   = rawKey;
+        h.llmConnector.provider = provider;
+        h.llmConnector.model    = h.llmConnector._defaultModel();
+        document.getElementById('api-key-input').value = '';
+        showNotice(`${provider.toUpperCase()} KEY APPLIED`);
+      } else {
+        // Just switch provider, keep existing key
+        h.llmConnector.provider = provider;
+        h.llmConnector.model    = h.llmConnector._defaultModel();
+        showNotice(`PROVIDER → ${provider.toUpperCase()}`);
+      }
     });
 
     // ── FPS tracker ───────────────────────────
@@ -1609,6 +1623,15 @@
     // ── Boot ──────────────────────────────────
     window.addEventListener('load', () => {
       buildParamPanel();
+      // Auto-confirm Gemini is active in the UI
+      setTimeout(() => {
+        const h = window.__hakari;
+        if (h?.llmConnector?.apiKey) {
+          showNotice('GEMINI 2.0 FLASH · ACTIVE', 3000);
+          const sel = document.getElementById('api-provider-select');
+          if (sel) sel.value = h.llmConnector.provider ?? 'gemini';
+        }
+      }, 1200);
       setTimeout(uiLoop, 400);
     });
   </script>

@@ -6,3 +6,4 @@ run_data
 temp
 .vscode
 .DS_Store
+hakari.config.js
