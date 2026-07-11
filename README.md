@@ -1,6 +1,4 @@
-<img width="954" height="186" alt="image" src="https://github.com/user-attachments/assets/64ed5858-4594-4711-98fa-655e3fb4332c" />
-
-
+<img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/e5cbedae-5495-475b-aedc-67612faafe63" />
 # HAKARI v3 — Cognitive Simulation Engine
 
 ```
@@ -15,7 +13,7 @@
 
 ## 🧠 WHAT IS HAKARI?
 
-HAKARI v3 is a **research-grade cognitive simulation engine** built on three interlocking subsystems running simultaneously inside a single tick-loop scheduler — every second the engine is alive.
+HAKARI v3 is a **cognitive simulation engine** built on three interlocking subsystems running simultaneously inside a single tick-loop scheduler — every second the engine is alive.
 
 Unlike agent frameworks that orchestrate API calls, HAKARI's simulation state is **continuous and persistent**. The system doesn't reset between conversations — it remembers where it was, what entropy looked like, and how its learning curve evolved.
 
