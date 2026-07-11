@@ -259,10 +259,8 @@ HTML        ████                                           6.0%
 ---
 
 ## 🔗 LINKS
-
-- **GitHub:** [github.com/Tejaswanth2406/hakari](https://github.com/Tejaswanth2406/hakari)
-- **Live Demo:** [tejaswanth2406.github.io/Portfolio/hakari.html](https://tejaswanth2406.github.io/Portfolio/hakari.html)
-- **Portfolio:** [tejaswanth2406.github.io/Portfolio](https://tejaswanth2406.github.io/Portfolio)
+- **Live Demo:** [tejaswanth2406.github.io/Portfolio/hakari.html](https://tejaswanth2406.github.io/hakari/) 
+- **Portfolio:** [tejaswanth2406.github.io/Portfolio](https://tejaswanth2406.github.io/Portfolio/hakari.html)
 
 ---
 
