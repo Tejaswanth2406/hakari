@@ -17,6 +17,7 @@ export class LLMConnector {
   constructor(opts={}){
 
     this.apiKey   = opts.apiKey ?? null
+    this.apiBaseUrl = opts.apiBaseUrl ?? null
     this.provider = opts.provider ?? 'anthropic'
 
     this.model =
@@ -123,7 +124,7 @@ export class LLMConnector {
 
     try{
 
-      if(this.apiKey)
+      if(this.apiBaseUrl || this.apiKey)
         response =
           await this._callWithRetry(
             queryText,
@@ -232,6 +233,9 @@ export class LLMConnector {
   /* ------------------------------------------------ */
 
   async _callLLM(queryText,context){
+
+    if(this.apiBaseUrl)
+      return this._callBackend(queryText, context)
 
     if(this.provider==='anthropic')
       return this._callAnthropic(
@@ -493,6 +497,31 @@ Context:
 ${context}`
   }
 
+  async _callBackend(queryText, context){
+
+    const response = await this._fetchWithTimeout(
+      `${this.apiBaseUrl.replace(/\/$/, '')}/ask`,
+      {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          question:queryText,
+          context,
+          provider:this.provider
+        })
+      }
+    )
+
+    if(!response.ok)
+      throw new Error(`HAKARI API ${response.status}`)
+
+    const data = await response.json()
+    if(!data.answer)
+      throw new Error('HAKARI API returned no answer')
+
+    return data.answer
+  }
+
   /* ------------------------------------------------ */
   /* NODE INJECTION                                   */
   /* ------------------------------------------------ */
@@ -590,7 +619,8 @@ ${context}`
       model:this.model,
       queryCount:this.queryCount,
       errorCount:this.errorCount,
-      hasApiKey:!!this.apiKey,
+      hasApiKey:!!(this.apiKey || this.apiBaseUrl),
+      transport:this.apiBaseUrl ? 'backend-proxy' : 'direct-provider',
       lastError:this.lastError
     }
   }

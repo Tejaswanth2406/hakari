@@ -863,10 +863,31 @@
 
     .sem-canvas-wrap canvas {
       width: 100%;
-      height: 130px;
+      height: 180px;
       display: block;
       border: 1px solid var(--warm-line);
       background: var(--paper);
+    }
+
+    .sem-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.35rem;
+      color: var(--ink3);
+      font-size: 0.5rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .sem-controls {
+      display: flex;
+      gap: 0.35rem;
+      margin-top: 0.35rem;
+    }
+
+    .sem-controls .btn {
+      flex: 1;
+      font-size: 0.5rem;
     }
 
     /* ── Bottom status bar ────────────────────── */
@@ -1128,8 +1149,8 @@
           <option value="anthropic">Anthropic Claude</option>
           <option value="openai">OpenAI GPT</option>
         </select>
-        <input type="password" id="api-key-input" placeholder="Key pre-loaded — or override here" autocomplete="off" />
-        <button class="btn gold" id="btn-api-apply">Apply Key</button>
+        <div style="font-size:0.5rem;line-height:1.5;color:var(--ink3);margin-bottom:0.35rem;">KEY STORED SERVER-SIDE · .env</div>
+        <button class="btn gold" id="btn-api-apply">Use Server Provider</button>
       </div>
 
     </aside>
@@ -1141,14 +1162,14 @@
       <!-- Center ChatGPT-like Initial Prompt -->
       <div id="center-prompt-overlay" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; pointer-events:none; z-index:20; transition:opacity 0.5s ease;">
         <h2 style="font-family:var(--font-serif); font-size:1.8rem; color:var(--ink); margin-bottom:1.5rem; font-weight:400;">Where should we begin?</h2>
-        
+
         <div style="pointer-events:auto; display:flex; align-items:center; background:var(--ink); color:var(--paper); border-radius:50px; padding:0.6rem 0.8rem; width:100%; max-width:550px; box-shadow:0 12px 40px rgba(28,26,20,0.25); transition:transform 0.2s;">
           <!-- Plus Button -->
           <button style="background:transparent; border:none; color:var(--paper); font-size:1.2rem; cursor:pointer; padding:0 0.6rem; display:flex; align-items:center; opacity:0.6; transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">+</button>
-          
+
           <!-- Input -->
           <input id="center-chat-input" type="text" placeholder="Ask anything" style="flex:1; background:transparent; border:none; color:var(--paper); font-family:var(--font-mono); font-size:0.8rem; outline:none; padding:0.5rem 0.5rem; letter-spacing:0.05em;" autocomplete="off" spellcheck="false" />
-          
+
           <!-- Mic Button -->
           <button id="center-mic-btn" style="background:transparent; border:none; color:var(--paper); cursor:pointer; padding:0 0.6rem; opacity:0.6; display:flex; align-items:center; transition:opacity 0.2s; margin-right:0.2rem;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Hold to Speak">
             <svg fill="currentColor" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/><path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/></svg>
@@ -1256,7 +1277,12 @@
       <!-- Semantic Map mini-viewer -->
       <div class="s-head">Semantic Space</div>
       <div class="sem-canvas-wrap">
-        <canvas id="sem-canvas" width="170" height="130"></canvas>
+        <canvas id="sem-canvas" width="320" height="180"></canvas>
+        <div class="sem-meta"><span id="sem-meta-nodes">0 nodes</span><span id="sem-meta-clusters">0 clusters</span></div>
+        <div class="sem-controls">
+          <button class="btn" id="btn-sem-labels">○ Labels</button>
+          <button class="btn" id="btn-sem-reset">↺ Reset View</button>
+        </div>
       </div>
 
     </aside>
@@ -1303,7 +1329,7 @@
   <!-- ═══ SCRIPTS ═══════════════════════════════ -->
 
   <!-- Runtime config (gitignored). Copy hakari.config.template.js → hakari.config.js and add your key. -->
-  <script src="./hakari.config.js" onerror="console.warn('[HAKARI] hakari.config.js not found — running without API key. Copy hakari.config.template.js to hakari.config.js and add your key.')"></script>
+  <script src="./hakari.config.js" onerror="console.warn('[HAKARI] hakari.config.js not found — using backend provider defaults.')"></script>
 
   <script type="module" src="./BLOCK_12/main.js"></script>
 
@@ -1407,6 +1433,7 @@
     const semCanvas = document.getElementById('sem-canvas');
     const semCtx = semCanvas?.getContext('2d');
     const CLUSTER_COLORS = ['#c84b2f', '#b87a30', '#5a6b44', '#8c3520', '#d4943c', '#a05030', '#4a5535'];
+    let _showSemLabels = false;
 
     function drawSemMap() {
       if (!semCtx || !window.__hakari) return;
@@ -1431,9 +1458,30 @@
       if (!h.conceptSpace || !h.aliveNodes) return;
       const nodes = h.aliveNodes();
       const coords = h.conceptSpace.project2D?.(nodes);
+      const metaNodes = document.getElementById('sem-meta-nodes');
+      const metaClusters = document.getElementById('sem-meta-clusters');
+      if (metaNodes) metaNodes.textContent = `${nodes.length} nodes`;
+      if (metaClusters) metaClusters.textContent = `${h.conceptSpace.clusterCount ?? 0} clusters`;
       if (!coords || coords.size === 0) return;
 
       const cx = W / 2, cy = H / 2, sc = Math.min(W, H) * 0.42;
+
+      // Draw graph relationships beneath the concepts.
+      semCtx.strokeStyle = 'rgba(28,26,20,0.16)';
+      semCtx.lineWidth = 0.6;
+      for (const node of nodes) {
+        const from = coords.get(node.id);
+        if (!from) continue;
+        for (const neighbor of h.graph?.getNeighbors?.(node.id) ?? []) {
+          if (node.id >= neighbor.id) continue;
+          const to = coords.get(neighbor.id);
+          if (!to) continue;
+          semCtx.beginPath();
+          semCtx.moveTo(cx + from.x * sc, cy + from.y * sc);
+          semCtx.lineTo(cx + to.x * sc, cy + to.y * sc);
+          semCtx.stroke();
+        }
+      }
 
       for (const [id, { x, y }] of coords) {
         const node = h._nodeMap?.get(id);
@@ -1449,6 +1497,13 @@
         semCtx.beginPath();
         semCtx.arc(px, py, r, 0, Math.PI * 2);
         semCtx.fill();
+
+        if (_showSemLabels && node.label) {
+          semCtx.globalAlpha = 0.85;
+          semCtx.fillStyle = '#1c1a14';
+          semCtx.font = '7px "Share Tech Mono"';
+          semCtx.fillText(node.label.slice(0, 18), px + r + 2, py + 2);
+        }
       }
       semCtx.globalAlpha = 1;
 
@@ -1506,6 +1561,16 @@
       showNotice(_evoPaused ? 'EVOLUTION PAUSED' : 'EVOLUTION RESUMED');
     });
 
+    document.getElementById('btn-sem-labels')?.addEventListener('click', function () {
+      _showSemLabels = !_showSemLabels;
+      this.textContent = (_showSemLabels ? '● ' : '○ ') + 'Labels';
+    });
+
+    document.getElementById('btn-sem-reset')?.addEventListener('click', () => {
+      drawSemMap();
+      showNotice('SEMANTIC SPACE REFRESHED');
+    });
+
     // Spawn / reinforce / entropy / reset
     document.getElementById('btn-spawn')?.addEventListener('click', () => {
       window.__hakari?.spawnNodes();
@@ -1555,23 +1620,12 @@
 
     // API key
     document.getElementById('btn-api-apply')?.addEventListener('click', () => {
-      const rawKey   = document.getElementById('api-key-input')?.value?.trim();
       const provider = document.getElementById('api-provider-select')?.value || 'gemini';
       const h        = window.__hakari;
       if (!h) return;
-      // If user typed a new key use it; otherwise keep whatever is already loaded
-      if (rawKey) {
-        h.llmConnector.apiKey   = rawKey;
-        h.llmConnector.provider = provider;
-        h.llmConnector.model    = h.llmConnector._defaultModel();
-        document.getElementById('api-key-input').value = '';
-        showNotice(`${provider.toUpperCase()} KEY APPLIED`);
-      } else {
-        // Just switch provider, keep existing key
-        h.llmConnector.provider = provider;
-        h.llmConnector.model    = h.llmConnector._defaultModel();
-        showNotice(`PROVIDER → ${provider.toUpperCase()}`);
-      }
+      h.llmConnector.provider = provider;
+      h.llmConnector.model = h.llmConnector._defaultModel();
+      showNotice(`${provider.toUpperCase()} SERVER PROVIDER SELECTED`);
     });
 
     // ── FPS tracker ───────────────────────────
@@ -1626,8 +1680,8 @@
       // Auto-confirm Gemini is active in the UI
       setTimeout(() => {
         const h = window.__hakari;
-        if (h?.llmConnector?.apiKey) {
-          showNotice('GEMINI 2.0 FLASH · ACTIVE', 3000);
+        if (h?.llmConnector?.apiBaseUrl) {
+          showNotice('SERVER LLM PROXY · ACTIVE', 3000);
           const sel = document.getElementById('api-provider-select');
           if (sel) sel.value = h.llmConnector.provider ?? 'gemini';
         }

@@ -7,3 +7,6 @@ temp
 .vscode
 .DS_Store
 hakari.config.js
+GHMS/
+
+python_engine/__pycache__/

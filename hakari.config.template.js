@@ -8,7 +8,6 @@
  */
 
 window.HAKARI_CONFIG = {
-  LLM_API_KEY:  '',          // paste your Gemini / OpenAI / Anthropic key here
-  LLM_PROVIDER: 'gemini',   // 'gemini' | 'openai' | 'anthropic' | 'groq'
+  LLM_PROVIDER: 'gemini',   // provider configured by the backend environment
   LLM_MODEL:    'gemini-2.0-flash',
 };

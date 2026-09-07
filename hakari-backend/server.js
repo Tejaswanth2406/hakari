@@ -8,6 +8,25 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// ── Live simulation state ───────────────────────────────────────
+const simulationState = {
+    tick: 0,
+    status: 'ready',
+    nodes: {},
+    updatedAt: new Date().toISOString()
+};
+
+function updateSimulationState(patch = {}) {
+    if (typeof patch !== 'object' || Array.isArray(patch)) {
+        throw new TypeError('state patch must be an object');
+    }
+
+    Object.assign(simulationState, patch, {
+        updatedAt: new Date().toISOString()
+    });
+    return simulationState;
+}
+
 // ── MongoDB ──────────────────────────────────────────────────────
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB connected'))
@@ -49,17 +68,18 @@ async function callOpenAI(question) {
 }
 
 // ── AI endpoint ──────────────────────────────────────────────────
-app.post('/ask', async (req, res) => {
-    const { question, user } = req.body;
+app.post(['/ask', '/api/ask'], async (req, res) => {
+    const { question, user, context } = req.body;
     const provider = process.env.LLM_PROVIDER || 'gemini';
+    const prompt = context ? `${question}\n\nHAKARI CONTEXT:\n${context}` : question;
 
     try {
         let answer;
 
         if (provider === 'gemini') {
-            answer = await callGemini(question);
+            answer = await callGemini(prompt);
         } else {
-            answer = await callOpenAI(question);
+            answer = await callOpenAI(prompt);
         }
 
         // Save conversation to DB
@@ -70,6 +90,26 @@ app.post('/ask', async (req, res) => {
         console.error('[/ask] error:', err.message);
         res.status(500).json({ error: 'AI call failed', detail: err.message });
     }
+});
+
+// ── Simulation state API ────────────────────────────────────────
+app.get('/api/state', (req, res) => {
+    res.json({ ...simulationState });
+});
+
+app.patch('/api/state', (req, res) => {
+    try {
+        res.json(updateSimulationState(req.body));
+    } catch (err) {
+        res.status(400).json({ error: err.message });
+    }
+});
+
+app.post('/api/state/tick', (req, res) => {
+    const tick = Number.isFinite(req.body?.tick)
+        ? req.body.tick
+        : simulationState.tick + 1;
+    res.json(updateSimulationState({ tick, status: 'running' }));
 });
 
 // ── Health check ─────────────────────────────────────────────────

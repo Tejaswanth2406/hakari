@@ -15,6 +15,14 @@
 
 HAKARI v3 is a **cognitive simulation engine** built on three interlocking subsystems running simultaneously inside a single tick-loop scheduler — every second the engine is alive.
 
+## PROJECT SUMMARY
+
+HAKARI is a JavaScript cognitive simulation engine for modeling knowledge
+evolution, propagation, and decay through probabilistic and
+information-theoretic concepts. Its Node.js REST API supports live retrieval
+and modification of simulation state without restarting the application,
+enabling API-driven data processing and system integration.
+
 Unlike agent frameworks that orchestrate API calls, HAKARI's simulation state is **continuous and persistent**. The system doesn't reset between conversations — it remembers where it was, what entropy looked like, and how its learning curve evolved.
 
 ```
@@ -156,19 +164,23 @@ __hakari.downloadLog()           // Export full session as JSON
 ## 🛠 TECH STACK
 
 ```
-Simulation Core  ──  JavaScript (94%)  ──  BLOCK1–9 + BLOCK_10
+Simulation Core  ──  JavaScript          ──  BLOCK1–9 + BLOCK_10
                      Tick Scheduler · Force Dynamics
                      Shannon Entropy · AR1 CSD
                      Bayesian Inference · Diagnostics.js
 
+Python Engine     ──  Python             ──  python_engine/
+                     Knowledge evolution · Propagation · Decay
+                     Probabilistic state · Shannon entropy
+
 Backend          ──  Node.js            ──  hakari-backend/server.js
-                     Express · REST API
+                     Express · REST API · Live state endpoints
                      OpenAI GPT · .env secrets
 
 Memory           ──  MongoDB            ──  BSON · Session Memory
                      Snapshots · importantMoments()
 
-Frontend         ──  HTML/CSS           ──  6%
+Frontend         ──  Vite.js            ──  index.html + vite.config.js
                      Controls.js · main.js
                      window.__hakari · window.__scheduler
                      window.__controls · BLOCK_15_UPGRADE
@@ -183,19 +195,35 @@ Frontend         ──  HTML/CSS           ──  6%
 git clone https://github.com/Tejaswanth2406/hakari.git
 cd hakari
 
-# Install dependencies
+# Install frontend dependencies
 npm install
 
-# Set environment variables
-cp .env.example .env
-# → Add your OpenAI API key and MongoDB URI
+# Install backend dependencies
+cd hakari-backend
+npm install
+cd ..
 
-# Start the backend
+# Set backend environment variables
+cp hakari-backend/.env.example hakari-backend/.env
+# → Add the provider key and MongoDB URI to hakari-backend/.env
+
+# Start the Node.js REST API
 node hakari-backend/server.js
 
-# Open index.html in browser
+# Start the Vite frontend in a second terminal
+npm run dev
+
+# The engine is available at the Vite URL shown in the terminal
 # Engine comes online. Tick-loop starts.
 # Access via: window.__hakari in devtools
+```
+
+The live state API is available at `/api/state`:
+
+```text
+GET   /api/state       Retrieve the current simulation state
+PATCH /api/state       Merge a state update without restarting
+POST  /api/state/tick  Advance the API-managed simulation tick
 ```
 
 ---
@@ -234,8 +262,13 @@ hakari/
 ├── Controls.js               # window.__controls
 ├── hakari-backend/
 │   ├── server.js             # Node.js REST API
+│   ├── .env.example          # Server-side provider configuration
 │   └── package.json
+├── python_engine/            # Python knowledge evolution model
+│   ├── simulation_engine.py  # Propagation, decay, and entropy
+│   └── __init__.py
 ├── index.html                # Frontend entry point
+├── vite.config.js            # Vite dev server and API proxy
 └── .env                      # Local secrets (not tracked)
 ```
 

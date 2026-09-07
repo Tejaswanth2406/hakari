@@ -17,7 +17,6 @@ import { Controls }  from './Controls.js';  // ? fixed: was ControlClass
 // Keys are loaded from hakari.config.js (gitignored) via a <script> tag in index.html
 // See hakari.config.template.js for the format.
 const _cfg         = window.HAKARI_CONFIG ?? {};
-const LLM_API_KEY  = _cfg.LLM_API_KEY  ?? null;
 const LLM_PROVIDER = _cfg.LLM_PROVIDER ?? 'gemini';
 const LLM_MODEL    = _cfg.LLM_MODEL    ?? 'gemini-2.0-flash';
 
@@ -32,14 +31,13 @@ window.addEventListener('DOMContentLoaded', () => {
     seed: 42,
 
     llm: {
-      apiKey:   LLM_API_KEY,
+      apiBaseUrl: '/api',
       provider: LLM_PROVIDER,
       model:    LLM_MODEL,
     },
 
     embedder: {
-      apiKey: LLM_API_KEY,
-      mode:   LLM_API_KEY ? 'api' : 'local',
+      mode: 'local',
     },
 
     statsIds: {
