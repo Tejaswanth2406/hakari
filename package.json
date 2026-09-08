@@ -6,9 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "metrics:python": "python -m python_engine.metrics_cli",
+    "metrics:rust": "cargo test --manifest-path rust_engine/Cargo.toml"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.13",
     "vite": "^7.1.5"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }

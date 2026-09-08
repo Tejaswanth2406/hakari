@@ -91,10 +91,11 @@ export class EdgeRenderer {
       const actB = nb.activationScore ?? 0;
       const maxAct = Math.max(actA, actB);
 
-      const x1 = (na.x ?? 0.5) * W;
-      const y1 = (na.y ?? 0.5) * H;
-      const x2 = (nb.x ?? 0.5) * W;
-      const y2 = (nb.y ?? 0.5) * H;
+      // NodeFactory stores physical canvas coordinates, not normalized values.
+      const x1 = Math.max(0, Math.min(W, na.x ?? W * 0.5));
+      const y1 = Math.max(0, Math.min(H, na.y ?? H * 0.5));
+      const x2 = Math.max(0, Math.min(W, nb.x ?? W * 0.5));
+      const y2 = Math.max(0, Math.min(H, nb.y ?? H * 0.5));
 
       const edgeKey = `${edge.a}:${edge.b}`;
       const isQuery = this._queryEdges.has(edgeKey)

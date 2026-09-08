@@ -172,6 +172,11 @@ Simulation Core  ──  JavaScript          ──  BLOCK1–9 + BLOCK_10
 Python Engine     ──  Python             ──  python_engine/
                      Knowledge evolution · Propagation · Decay
                      Probabilistic state · Shannon entropy
+                     Normalization · True-value estimation · RMSE
+
+Rust Metrics      ──  Rust               ──  rust_engine/
+                     Dependency-free numeric primitives
+                     Normalization · True-value estimation · RMSE
 
 Backend          ──  Node.js            ──  hakari-backend/server.js
                      Express · REST API · Live state endpoints
@@ -224,6 +229,36 @@ The live state API is available at `/api/state`:
 GET   /api/state       Retrieve the current simulation state
 PATCH /api/state       Merge a state update without restarting
 POST  /api/state/tick  Advance the API-managed simulation tick
+```
+
+### Python and Rust scientific metrics
+
+JavaScript remains the live simulation runtime. The backend can also delegate
+numeric evaluation to Python or Rust using one stable response shape:
+
+```text
+POST /api/metrics/python
+POST /api/metrics/rust
+```
+
+Request body:
+
+```json
+{
+    "predictions": [1, 3],
+    "observations": [2, 5],
+    "observation_weight": 0.7
+}
+```
+
+Both adapters return min-max normalized series, an observation-weighted
+`true_values` estimate, and root mean square error (`rmse`). Python is invoked
+as a JSON-line module. Rust uses the built binary when available and otherwise
+builds through Cargo.
+
+```bash
+python -m pytest python_engine/tests -q
+cargo test --manifest-path rust_engine/Cargo.toml
 ```
 
 ---

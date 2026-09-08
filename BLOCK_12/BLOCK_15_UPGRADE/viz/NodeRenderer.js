@@ -55,8 +55,8 @@ export class NodeRenderer {
     const W = this._canvas.width;
     const H = this._canvas.height;
     this._deathAnims.set(node.id, {
-      x:     (node.x ?? 0.5) * W,
-      y:     (node.y ?? 0.5) * H,
+      x:     Math.max(0, Math.min(W, node.x ?? W * 0.5)),
+      y:     Math.max(0, Math.min(H, node.y ?? H * 0.5)),
       r:     3 + (node.strength ?? 0.3) * 8,
       alpha: 0.6,
       ttl:   1.0,  // seconds
@@ -82,8 +82,9 @@ export class NodeRenderer {
     for (const node of nodes) {
       if (!node.alive) continue;
 
-      const x   = (node.x ?? 0.5) * W;
-      const y   = (node.y ?? 0.5) * H;
+      // NodeFactory stores physical canvas coordinates, not normalized values.
+      const x   = Math.max(0, Math.min(W, node.x ?? W * 0.5));
+      const y   = Math.max(0, Math.min(H, node.y ?? H * 0.5));
       const str = node.strength      ?? 0.5;
       const act = node.activationScore ?? 0;
       const eng = node.energy         ?? 0.5;

@@ -1,0 +1,12 @@
+[package]
+name = "hakari_metrics"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "hakari_metrics"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hakari-metrics"
+path = "src/main.rs"

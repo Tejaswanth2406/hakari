@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HAKARI v3 — Unified Intelligence Field</title>
+  <title>HAKARI — Cognitive Simulation Engine</title>
+  <meta name="application-name" content="HAKARI" />
+  <meta name="description" content="HAKARI is a cognitive simulation engine for nonlinear dynamics, thermodynamics, ecosystems, and intelligent agents." />
 
   <!-- Favicon -->
   <link rel="icon" href="./favicon.jpg" type="image/jpeg">
@@ -276,11 +278,12 @@
 
     .header-title {
       font-family: var(--font-jp);
-      font-size: 2.1rem;
+      font-size: 0.95rem;
       font-weight: 900;
       color: var(--ink);
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       line-height: 1;
+      white-space: nowrap;
       animation: stampReveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
       opacity: 0;
     }
@@ -1070,8 +1073,8 @@
     <!-- Center title -->
     <div class="header-center">
       <div>
-        <div class="header-title">HAKARI</div>
-        <div class="header-sub">HEDF + HUIE · UNIFIED INTELLIGENCE ENGINE</div>
+        <div class="header-title">Cognitive Simulation Engine</div>
+        <div class="header-sub">COGNITIVE SIMULATION ENGINE · HEDF + HUIE</div>
       </div>
       <div class="header-keywords">
         <span class="kw-pill">ELEGANT</span>
@@ -1189,7 +1192,7 @@
       <span class="corner br" style="animation: crossRotate 5s ease-in-out 3.6s infinite;">×</span>
 
       <div class="canvas-eq">dH/dt = αI + βΣwH − γS − ΛH + κR + ση(t) + φA</div>
-      <div class="canvas-label">HAKARI COGNITIVE FIELD · ACTIVE</div>
+      <div class="canvas-label">HAKARI · COGNITIVE SIMULATION ENGINE · ACTIVE</div>
 
       <!-- Phase badge -->
       <div id="phase-badge">—</div>
@@ -1291,10 +1294,10 @@
 
   <!-- ═══ STATUS BAR ════════════════════════════ -->
   <div class="status-bar">
-    <span class="status-item"><span id="fps-dot"></span><span id="stat-fps">—</span> FPS &nbsp;·&nbsp; HAKARI v3</span>
+    <span class="status-item"><span id="fps-dot"></span><span id="stat-fps">—</span> FPS &nbsp;·&nbsp; HAKARI</span>
     <span class="status-item">HEDF <span class="hi">+</span> HUIE <span class="hi">·</span> BLOCK <span
         class="gold">12–14</span> <span class="hi">COMPLETE</span></span>
-    <span class="status-item">ハカリ <span class="hi">·</span> COGNITIVE FIELD <span class="gold">ACTIVE</span></span>
+    <span class="status-item">HAKARI <span class="hi">·</span> COGNITIVE SIMULATION ENGINE <span class="gold">ACTIVE</span></span>
   </div>
 
   <!-- Notice toast -->
@@ -1326,12 +1329,15 @@
     DIALOGUE UI
   </button>
 
+  <div id="hakari-react-root"></div>
+
   <!-- ═══ SCRIPTS ═══════════════════════════════ -->
 
   <!-- Runtime config (gitignored). Copy hakari.config.template.js → hakari.config.js and add your key. -->
   <script src="./hakari.config.js" onerror="console.warn('[HAKARI] hakari.config.js not found — using backend provider defaults.')"></script>
 
   <script type="module" src="./BLOCK_12/main.js"></script>
+  <script type="module" src="./src/react-main.jsx"></script>
 
   <script>
     /* ───────────────────────────────────────────
@@ -1455,16 +1461,50 @@
         semCtx.beginPath(); semCtx.moveTo(0, y); semCtx.lineTo(W, y); semCtx.stroke();
       }
 
-      if (!h.conceptSpace || !h.aliveNodes) return;
-      const nodes = h.aliveNodes();
-      const coords = h.conceptSpace.project2D?.(nodes);
+      const nodes = h.aliveNodes?.() ?? [];
+      const entropy = Math.max(0, Math.min(1, Number(h.entropyField?.normalized ?? h.entropyField?.S ?? 0)));
+      const strength = nodes.length
+        ? nodes.reduce((sum, node) => sum + Number(node.strength ?? 0), 0) / nodes.length
+        : 0;
+      const cx = W / 2, cy = H / 2;
+      const orbit = 18 + entropy * 24;
+      const angle = performance.now() * 0.001 * (0.7 + entropy) + Number(h.tick ?? 0) * 0.004;
+      const orbX = cx + Math.cos(angle) * orbit;
+      const orbY = cy + Math.sin(angle * 1.25) * orbit * 0.62;
+      const orbRadius = 4 + strength * 8 + Math.sin(performance.now() * 0.004) * 1.2;
+
+      // Always show live telemetry, even before semantic embeddings exist.
+      semCtx.strokeStyle = 'rgba(184,122,48,0.35)';
+      semCtx.lineWidth = 1;
+      semCtx.beginPath();
+      semCtx.arc(cx, cy, orbit, 0, Math.PI * 2);
+      semCtx.stroke();
+
+      const glow = semCtx.createRadialGradient(orbX, orbY, 0, orbX, orbY, orbRadius * 4);
+      glow.addColorStop(0, 'rgba(200,75,47,0.5)');
+      glow.addColorStop(1, 'rgba(200,75,47,0)');
+      semCtx.fillStyle = glow;
+      semCtx.beginPath();
+      semCtx.arc(orbX, orbY, orbRadius * 4, 0, Math.PI * 2);
+      semCtx.fill();
+
+      semCtx.fillStyle = entropy > 0.66 ? '#8c3520' : entropy > 0.33 ? '#c84b2f' : '#b87a30';
+      semCtx.beginPath();
+      semCtx.arc(orbX, orbY, orbRadius, 0, Math.PI * 2);
+      semCtx.fill();
+
+      const coords = h.conceptSpace?.project2D?.(nodes);
       const metaNodes = document.getElementById('sem-meta-nodes');
       const metaClusters = document.getElementById('sem-meta-clusters');
       if (metaNodes) metaNodes.textContent = `${nodes.length} nodes`;
       if (metaClusters) metaClusters.textContent = `${h.conceptSpace.clusterCount ?? 0} clusters`;
-      if (!coords || coords.size === 0) return;
+      semCtx.fillStyle = '#1c1a14';
+      semCtx.font = '8px "Share Tech Mono"';
+      semCtx.fillText(`TICK ${h.tick ?? 0}  ·  S ${entropy.toFixed(2)}`, 6, 12);
+      semCtx.fillText(`H ${strength.toFixed(2)}  ·  ${h.phaseDetector?.phase ?? 'ACTIVE'}`, 6, H - 7);
+      if (!h.conceptSpace || !coords || coords.size === 0) return;
 
-      const cx = W / 2, cy = H / 2, sc = Math.min(W, H) * 0.42;
+      const sc = Math.min(W, H) * 0.42;
 
       // Draw graph relationships beneath the concepts.
       semCtx.strokeStyle = 'rgba(28,26,20,0.16)';

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "BIZ UDPGothic", "Noto Sans", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "Share Tech Mono", "Cascadia Mono", monospace;
+}
+
+#hakari-react-root button,
+#hakari-react-root input {
+  font-family: var(--font-mono);
+}
