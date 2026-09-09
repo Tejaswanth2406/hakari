@@ -10,3 +10,64 @@
 #hakari-react-root input {
   font-family: var(--font-mono);
 }
+
+#hakari-react-root {
+  width: 0;
+  height: 0;
+  flex: 0 0 0;
+  overflow: visible;
+}
+
+@media (max-width: 760px) {
+  body {
+    overflow: hidden;
+  }
+
+  header {
+    min-width: 0;
+  }
+
+  .header-stamp {
+    min-width: 84px;
+    padding-inline: 0.75rem;
+  }
+
+  .header-center {
+    min-width: 0;
+    overflow: hidden;
+    justify-content: flex-start;
+    padding-inline: 0.75rem;
+  }
+
+  .header-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.75rem;
+  }
+
+  .header-keywords {
+    display: none;
+  }
+
+  .layout {
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    display: none;
+  }
+
+  .canvas-wrap {
+    min-height: calc(100vh - 89px);
+  }
+
+  .status-bar {
+    display: none;
+  }
+
+  #chat-toggle-btn {
+    right: 1rem !important;
+  }
+}

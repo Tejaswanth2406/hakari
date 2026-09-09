@@ -1,4 +1,4 @@
-﻿/**
+/**
  * HAKARI v3 — Hakari.js
  * ─────────────────────────────────────────────
  * Master coordinator. Owns every subsystem.
@@ -213,7 +213,9 @@ export class Hakari {
     }
 
     // ── UI ────────────────────────────────────────────
-    this.statsPanel = new StatsPanel(opts.statsIds ?? {});
+    if (!opts.headless) {
+      this.statsPanel = new StatsPanel(opts.statsIds ?? {});
+    }
 
     // ── Debug + Analysis ──────────────────────────────
     this.diagnostics       = new Diagnostics();
@@ -431,7 +433,9 @@ export class Hakari {
     }
 
     // 20. Stats panel
-    this.statsPanel.update(this._buildStatsState(S, J, aliveAfter));
+    if (this.statsPanel) {
+      this.statsPanel.update(this._buildStatsState(S, J, aliveAfter));
+    }
 
     // 21. Render
     if (this.canvas) {

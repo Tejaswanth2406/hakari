@@ -1,0 +1,20 @@
+[
+  {
+    "nodes": 1000,
+    "baselineTickMs": 0.01624899999999997,
+    "hakariTickMs": 8.220614999999999,
+    "overheadFactor": 505.9151332389695
+  },
+  {
+    "nodes": 5000,
+    "baselineTickMs": 0.011190999999998895,
+    "hakariTickMs": 11.957651,
+    "overheadFactor": 1068.5060316326674
+  },
+  {
+    "nodes": 10000,
+    "baselineTickMs": 0.04300799999999981,
+    "hakariTickMs": 17.204404999999998,
+    "overheadFactor": 400.02801804315646
+  }
+]

@@ -1,0 +1,6 @@
+trial,seed,final_nodes,final_entropy,final_objective,avg_tick_ms
+1,42,0,0,0,29.921
+2,43,0,0,0,34.489
+3,44,0,0,0,21.345
+4,45,0,0,0,49.757
+5,46,0,0,0,26.306

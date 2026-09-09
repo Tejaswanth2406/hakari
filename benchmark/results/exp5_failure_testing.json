@@ -1,0 +1,727 @@
+[
+  {
+    "seed": 42,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      }
+    ],
+    "profiler": {
+      "physics": 6.186200000001406,
+      "learning": 36.83920000000137,
+      "memory": 9.846100000001343,
+      "entropy": 3.158299999999997,
+      "rendering": 0,
+      "total": 299.20989999999944
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 8.23785400390625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 9.352630615234375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 10.877883911132812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 11.042953491210938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 10.741127014160156,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 10.246498107910156,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 10.22418212890625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 9.774467468261719,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 13.024620056152344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 12.395683288574219,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "CRITICAL",
+        "hasNaN": false
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      }
+    ],
+    "profiler": {
+      "physics": 6.439600000005498,
+      "learning": 33.28859999999838,
+      "memory": 32.09000000000185,
+      "entropy": 1.7680999999995493,
+      "rendering": 0,
+      "total": 344.8858000000009
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 12.520294189453125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 15.737815856933594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 16.94904327392578,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 16.338623046875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 23.382583618164062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 22.633262634277344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 21.977516174316406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 18.212425231933594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 25.37757110595703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 16.651329040527344,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      }
+    ],
+    "profiler": {
+      "physics": 3.187999999999761,
+      "learning": 20.230599999996343,
+      "memory": 15.57990000000109,
+      "entropy": 1.2814000000083752,
+      "rendering": 0,
+      "total": 213.45149999999842
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 24.37225341796875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 25.380172729492188,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 18.79529571533203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 25.646522521972656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 18.253684997558594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 24.936233520507812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 15.901390075683594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 22.396713256835938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 29.005592346191406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 19.842559814453125,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 45,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "CHAOTIC",
+        "hasNaN": false
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      }
+    ],
+    "profiler": {
+      "physics": 20.29609999999593,
+      "learning": 33.43309999999724,
+      "memory": 87.8842000000036,
+      "entropy": 3.5764999999962583,
+      "rendering": 0,
+      "total": 497.57149999999933
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 26.983352661132812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 38.954620361328125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 51.846771240234375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 32.735015869140625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 40.04045867919922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 47.013580322265625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 53.994789123535156,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 60.811485290527344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 38.80743408203125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 45.71044921875,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 46,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "entropy": 0,
+        "regime": "STABLE",
+        "hasNaN": false
+      }
+    ],
+    "profiler": {
+      "physics": 2.6077000000041153,
+      "learning": 23.32279999999696,
+      "memory": 6.646900000005644,
+      "entropy": 1.8384999999993852,
+      "rendering": 0,
+      "total": 263.05689999999686
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 53.13964080810547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 62.17002868652344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 46.37933349609375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 56.80780792236328,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 67.18251037597656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 47.259033203125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 57.784454345703125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 68.1382827758789,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 46.782814025878906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 57.14350128173828,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  }
+]

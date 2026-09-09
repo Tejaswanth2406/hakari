@@ -1,0 +1,6152 @@
+[
+  {
+    "seed": 42,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 3,
+        "objective": -0.8485281374238569,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.3830553877577127,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.2662188482295225,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.2161558436020077,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.18668023547588755,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.16669713344235157,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.15200662301175222,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.14062117120034506,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.13146235634232184,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.12388776090689375,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.11748770993350074,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.11198699189827331,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.10719296453661004,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.10296621142612909,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.09920301374209091,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.09582439732115416,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.09276902565249596,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.08998843838339864,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.08744377218051803,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.0851034477056767,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.08294150338115831,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.0809363725205251,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.07906997082273093,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.0773270052366624,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.07569444340479752,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.0741611013775824,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.07271731965197746,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.07135470600920664,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.07006592946109028,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.06884455371885742,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.06768490152694301,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.06658194332123844,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.06553120522005666,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.06452869250192182,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.06357082558088045,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.0626543861366286,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.06177647154926963,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.060934456166886565,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.06012595822711119,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.05934881148247128,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.05860104075892343,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.05788084081906327,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.057186558014613226,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.05651667430336399,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.055869793278696914,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.055244627918883966,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.054639989811439214,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.05405477964711898,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.053487978810477926,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.05293864192055924,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 10.325300000073184,
+      "learning": 27.5676999999705,
+      "memory": 208.64610000007087,
+      "entropy": 6.251099999906728,
+      "rendering": 0,
+      "total": 901.6779000000352
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 83.7209701538086,
+        "nodes": 3,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 102.1436767578125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 106.7164306640625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 111.28646850585938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 115.84510040283203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 120.39408111572266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 81.73674011230469,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 86.29072570800781,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 90.83710479736328,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 95.39627075195312,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 99.9528579711914,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 104.53355407714844,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 109.10186767578125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 113.64962768554688,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 118.20867919921875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 122.75362396240234,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 127.33992004394531,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 131.8912582397461,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 136.45303344726562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 84.23648834228516,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 88.78932189941406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 93.37506103515625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 97.92593383789062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 102.46964263916016,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 107.03652954101562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 111.58645629882812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 116.14525604248047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 120.72290802001953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 125.25678253173828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 129.80792236328125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 134.3709487915039,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 138.92249298095703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 143.52088165283203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 84.31282806396484,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 88.86656951904297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 93.40472412109375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 97.96917724609375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 102.54385375976562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 107.09860229492188,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 111.65593719482422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 116.21302032470703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 120.7627944946289,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 125.34805297851562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 129.89461517333984,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 134.45362091064453,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 139.00296020507812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 143.5540542602539,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 84.40755462646484,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 88.99097442626953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 93.51634216308594,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 107,
+        "objective": -0.8485281374238569,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.43405651269382656,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.29960975476146295,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.2427468543385306,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.20942570273651925,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.18689168513076007,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.17035144067372504,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.15754590298103555,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.1472526058175112,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.13874470909924885,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.13155936058932585,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.12538596951089415,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.1200073215946154,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.11526633169313372,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.11104620719934515,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.10725806494623244,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.10383290290696379,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.10071622529390269,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.09786434326151396,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.09524176691828853,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.09281932750089623,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.09057279979720902,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.08848187458523808,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.08652938061871279,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.08470068756079846,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.08298324214439191,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.08136620379399331,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.07984015544811987,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.0783968719028994,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.0770291326261089,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.07573056929241925,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.07449554067639015,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.0733190292847482,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.0721965554001359,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.07112410517313712,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.07009807012735454,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.06911519599670946,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.06817253923994704,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.06726742990700961,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.06639743978911242,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.0655603549863997,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.0647541521868543,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.06397697807731577,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.06322713140930225,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.06250304732433551,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.06180328360986637,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.061126508610930774,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.06047149056685331,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.05983708817862492,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.05922224224254121,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 6.4255000001285225,
+      "learning": 14.657400000043708,
+      "memory": 177.25870000004215,
+      "entropy": 2.6870000000690197,
+      "rendering": 0,
+      "total": 594.896800000035
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 94.44695281982422,
+        "nodes": 107,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 131.47068786621094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 136.0458755493164,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 140.60494232177734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 145.1649398803711,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 106.99457550048828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 111.57915496826172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 116.12673950195312,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 120.66434478759766,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 125.21153259277344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 129.75979614257812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 134.3316650390625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 138.89225006103516,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 143.4350128173828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 147.99272918701172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 152.5383071899414,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 105.5868148803711,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 110.13435363769531,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 114.6838607788086,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 119.22773742675781,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 123.77105712890625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 128.33871459960938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 132.89885711669922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 137.41917419433594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 141.95933532714844,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 146.47126007080078,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 151.0024871826172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 155.5660400390625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 160.09609985351562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 164.6265106201172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 105.50959014892578,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 110.0351333618164,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 114.59959411621094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 119.13674926757812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 123.66119384765625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 128.1766128540039,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 132.71060180664062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 137.32835388183594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 141.86277770996094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 146.39035034179688,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 150.91405487060547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 155.4266357421875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 159.99278259277344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 164.51439666748047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 105.35346221923828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 109.88648986816406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 114.412353515625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 118.9251708984375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 123.5015640258789,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 128.03099822998047,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 3,
+        "objective": -0.8485281374238569,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.3830553877577127,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.2662188482295225,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.2161558436020077,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.18668023547588755,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.16669713344235157,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.15200662301175222,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.14062117120034506,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.13146235634232184,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.12388776090689375,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.11748770993350074,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.11198699189827331,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.10719296453661004,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.10296621142612909,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.09920301374209091,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.09582439732115416,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.09276902565249596,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.08998843838339864,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.08744377218051803,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.0851034477056767,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.08294150338115831,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.0809363725205251,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.07906997082273093,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.0773270052366624,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.07569444340479752,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.0741611013775824,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.07271731965197746,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.07135470600920664,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.07006592946109028,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.06884455371885742,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.06768490152694301,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.06658194332123844,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.06553120522005666,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.06452869250192182,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.06357082558088045,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.0626543861366286,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.06177647154926963,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.060934456166886565,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.06012595822711119,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.05934881148247128,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.05860104075892343,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.05788084081906327,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.057186558014613226,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.05651667430336399,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.055869793278696914,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.055244627918883966,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.054639989811439214,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.05405477964711898,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.053487978810477926,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.05293864192055924,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 4.738399999841931,
+      "learning": 12.47819999996318,
+      "memory": 148.16809999999714,
+      "entropy": 1.8090999999858468,
+      "rendering": 0,
+      "total": 535.6922000000268
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 144.85205078125,
+        "nodes": 3,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 163.29517364501953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 125.32035827636719,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 129.87730407714844,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 134.4202880859375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 138.96478271484375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 143.56065368652344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 148.0976333618164,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 152.63427734375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 157.2066421508789,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 161.75684356689453,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 166.30696868896484,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 123.49256896972656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 128.0299301147461,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 132.57678985595703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 137.10675048828125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 141.68004608154297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 146.22105407714844,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 150.76517486572266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 155.30958557128906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 159.85045623779297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 164.4200897216797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 168.9667510986328,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 173.50624084472656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 178.06736755371094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 182.59540557861328,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 123.4306640625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 128.0030288696289,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 132.54048919677734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 137.08097076416016,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 141.64356994628906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 146.19076538085938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 150.76387786865234,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 155.31841278076172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 159.86492919921875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 164.40182495117188,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 168.9574737548828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 173.51163482666016,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 178.05789947509766,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 182.60413360595703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 123.44233703613281,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 127.98246002197266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 132.5590362548828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 137.10021209716797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 141.65223693847656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 146.1978302001953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 150.73363494873047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 155.26131439208984,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 159.84624481201172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 164.38088989257812,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 45,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 7,
+        "objective": -0.8485281374238569,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.3850589791709951,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.26754335292184556,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.21721382105706002,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.18758655250985787,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.1675025141595872,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.15273866004438102,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.1412968200003382,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.13209291049726665,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.12448118761469587,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.11804987726882064,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.11252236935778676,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.1077050491293609,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.10345780021341149,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.09967638544892451,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.09628143754059454,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.09321131567428746,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.09041731978092893,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.08786039477987066,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.08550880588018844,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.08333646396609459,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.08132169659727777,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.07944633094153979,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.07769499919338085,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.07605460537853634,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.07451391102191797,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.07306320958127568,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.07169406801326766,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.07039911970253339,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.06917189710962231,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.06800669543699873,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.06689846073995653,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.06584269746584152,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.0648353915565669,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.06387294611027838,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.06295212724784888,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.062070018324858,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.061223981009963166,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.06041162204502249,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.05963076473206545,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.058879424372719785,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.0581557870284945,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.05745819108398357,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.05678511118608034,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.05613514420560191,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.055506996927084475,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.054899475220824535,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.054311474490756684,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.05374197122422899,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.053190015496537874,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 6.221700000036435,
+      "learning": 15.889700000103403,
+      "memory": 109.77969999989,
+      "entropy": 2.4586000000599597,
+      "rendering": 0,
+      "total": 552.1704999999656
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 177.30760955810547,
+        "nodes": 7,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 154.31057739257812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 158.8841094970703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 163.4512939453125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 167.99413299560547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 172.53598022460938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 177.12461853027344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 181.6584701538086,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 186.19625091552734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 145.36891174316406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 149.91918182373047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 154.48394775390625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 159.02689361572266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 163.5678939819336,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 168.12374114990234,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 172.6607437133789,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 177.2387924194336,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 181.78606414794922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 186.34908294677734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 190.88758087158203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 195.43582916259766,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 200.01256561279297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 204.54674530029297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 147.7229995727539,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 152.2732696533203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 156.8178939819336,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 161.36605834960938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 165.92987060546875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 170.46499633789062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 175.00067138671875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 179.54216766357422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 184.08480834960938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 188.65525817871094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 193.19284057617188,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 197.74864959716797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 202.2794952392578,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 206.8410873413086,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 147.70699310302734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 152.2472915649414,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 156.79254913330078,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 161.3296356201172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 165.87041473388672,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 170.4421844482422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 174.9754638671875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 179.5315399169922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 184.07940673828125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 188.62732696533203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 193.17214965820312,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 197.76026916503906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 202.3012237548828,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 46,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 1,
+        "objective": -0.848528137423857,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.3820644964014607,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.2655634318490287,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.21563222108767793,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.18623163435639833,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.16629847203746922,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.15164425396633585,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.14028670689884987,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.13115020934011215,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.12359398912033827,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.1172094097006833,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.11172195148386985,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.10693945336328704,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.10272284524982525,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.09896866480326841,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.09559813239886983,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.09255006211350279,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.089776112224275,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.08723751429152027,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.08490276591080353,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.0827459686245007,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.08074560808601929,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.0788836438110287,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.07714481974718196,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.07551613502373666,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.07398643267862698,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.07254607649121704,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.07118669444937588,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.06990097319923831,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.06868249192026774,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.06752558698954525,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.06642524091090081,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.06537699052945344,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.06437685069513108,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.06342125039321411,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.06250697900494227,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.06163114085253366,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.060791116560400864,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.05998453005662678,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.059209220266801595,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.058463216731507374,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.05774471852047325,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.05705207592925466,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.05638377453464787,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.05573842125781883,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.055114732143056684,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.05451152160801754,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.05392769296055346,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.05336223000945499,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.05281418962303714,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 7.579300000030344,
+      "learning": 20.57940000006056,
+      "memory": 127.06890000007297,
+      "entropy": 2.6294000000943925,
+      "rendering": 0,
+      "total": 644.476900000087
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 165.32260131835938,
+        "nodes": 1,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 183.3566436767578,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 187.92039489746094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 192.48018646240234,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 197.03339385986328,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 201.57762908935547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 206.16917419433594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 167.5865707397461,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 172.15773010253906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 176.70516204833984,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 181.23545837402344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 185.8001708984375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 190.36138916015625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 194.9068603515625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 199.45264434814453,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 203.99388885498047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 208.56825256347656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 213.1072998046875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 217.66864776611328,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 165.005859375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 169.56665802001953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 174.14761352539062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 178.70545196533203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 183.25513458251953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 187.80538940429688,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 192.3538360595703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 196.9090347290039,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 201.493896484375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 206.0537338256836,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 210.5977020263672,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 215.15924072265625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 219.6944808959961,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 224.28182983398438,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 165.58082580566406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 170.1241683959961,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 174.6688690185547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 179.22579956054688,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 183.79297637939453,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 188.35350036621094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 192.9066390991211,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 197.46612548828125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 202.01262664794922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 206.60104370117188,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 211.15345764160156,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 215.7015151977539,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 220.26089477539062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 224.80877685546875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 166.0940170288086,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 170.6802215576172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 175.22442626953125,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 47,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 78,
+        "objective": -0.8485281374238569,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.4251278425263646,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.2938139808059576,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.238143763478735,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.2054934805470094,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.18340318722195373,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.167184110601202,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.15462483086727813,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.144528083780112,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.13618176860175554,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.12913230242962176,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.12307525366188166,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.11779768140495991,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.11314557073219679,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.10900439920483147,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.10528700324488681,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.10192571039165847,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.09886707121481146,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.09606823312913426,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.0934943837014767,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.09111690960102758,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.08891204589857007,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.08685986848432471,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.08494353113375767,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.08314867998177031,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.08146299862546538,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.07987585075450895,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.0783779965236594,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.07696136533367004,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.07561887222424145,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.07434426831936487,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.07313201810445664,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.0719771980255844,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.07087541216658944,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.0698227217057665,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.06881558556760647,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.06785081022876285,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.06692550705498396,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.06603705586906781,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.06518307370211376,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.0643613878784998,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.06357001274173935,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.06280712945311424,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.06207106839486775,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.06136029379017638,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.060673390217249074,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.06000905074790035,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.05936606648429303,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.058743317303157544,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.058139763646189474,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 6.500200000195036,
+      "learning": 15.94319999997424,
+      "memory": 177.81960000006984,
+      "entropy": 2.3505000000732252,
+      "rendering": 0,
+      "total": 642.7688000000326
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 182.63409423828125,
+        "nodes": 78,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 217.46426391601562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 222.037841796875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 226.60359954833984,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 188.9674301147461,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 193.50900268554688,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 198.1133041381836,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 202.65702056884766,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 207.19666290283203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 211.75294494628906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 216.30641174316406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 220.8729248046875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 225.43234252929688,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 229.97877502441406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 234.53787231445312,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 187.89313507080078,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 192.46817016601562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 197.00666046142578,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 201.56346130371094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 206.10850524902344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 210.65312957763672,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 215.23090362548828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 219.77670288085938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 224.32544708251953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 228.8888702392578,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 233.43392181396484,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 237.9874038696289,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 242.56905364990234,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 247.1100082397461,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 187.93160247802734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 192.49095153808594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 197.04389190673828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 201.6298370361328,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 206.1768798828125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 210.72283172607422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 215.25474548339844,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 219.82300567626953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 224.39675903320312,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 228.95352172851562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 233.5041732788086,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 238.0487518310547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 242.59867095947266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 247.17013549804688,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 187.97016143798828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 192.5313949584961,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 197.07896423339844,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 201.63513946533203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 206.1790008544922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 210.76175689697266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 215.30087280273438,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 48,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 5,
+        "objective": -0.848528137423857,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.38405353383779073,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.2668788140951176,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.21668303782578283,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.1871318701219301,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.16709847671103714,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.15237142136945311,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.14095787222311065,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.13177658696898045,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.12418349084902502,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.11776786306828019,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.11225379527698429,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.10744816066805941,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.10321119406304696,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.0994389183667031,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.0960521635278069,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.0929894414069586,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.09020217220408015,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.0876513970399139,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.08530545911498612,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.0831383332995636,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.08112840020988123,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.07925753142941784,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.07751039665641216,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.07587393183250891,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.07433692583743703,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.0728896957278679,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.0715238289415035,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.0702319767365192,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.06900768725133574,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.06784526950565899,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.06673968178599418,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.06568643941150862,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.0646815380248206,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.06372138941102061,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.0628027674964285,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.061922762672339454,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.06107874296831593,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.06026832089330621,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.0594893249920374,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.05873977534419587,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.058017862376347644,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.057321928469934565,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.05665045193948307,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.056002033028291716,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.055375381628079104,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.05476930647726795,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.05418270563200156,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.05361455803637811,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.05306391604512382,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 5.4438000002082845,
+      "learning": 13.384000000107335,
+      "memory": 209.78020000007018,
+      "entropy": 1.9852999999748135,
+      "rendering": 0,
+      "total": 646.8041999999805
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 231.20944213867188,
+        "nodes": 5,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 250.2907943725586,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 212.29346466064453,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 216.85110473632812,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 221.40252685546875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 225.9595947265625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 230.56343841552734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 235.11417388916016,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 239.6559066772461,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 244.20259857177734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 248.74815368652344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 253.31202697753906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 210.83914947509766,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 215.38152313232422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 219.93737030029297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 224.4765396118164,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 229.05958557128906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 233.60708618164062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 238.1665267944336,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 242.70568084716797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 247.25525665283203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 251.82747650146484,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 256.3708801269531,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 260.90928649902344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 265.4694519042969,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 270.01075744628906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 210.84185028076172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 215.41334533691406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 219.9419937133789,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 224.4906234741211,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 229.04268646240234,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 233.58094787597656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 238.16320037841797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 242.7051010131836,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 247.25524139404297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 251.79167938232422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 256.3556823730469,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 260.9240188598633,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 265.47562408447266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 270.0287628173828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 210.86260223388672,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 215.41375732421875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 219.99307250976562,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 224.5270233154297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 229.0791244506836,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 233.62737274169922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 238.18303680419922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 242.73302459716797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 247.31482696533203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 251.85313415527344,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 49,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 1,
+        "objective": -0.848528137423857,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.3820644964014607,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.2655634318490287,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.21563222108767793,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.18623163435639833,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.16629847203746922,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.15164425396633585,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.14028670689884987,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.13115020934011215,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.12359398912033827,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.1172094097006833,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.11172195148386985,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.10693945336328704,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.10272284524982525,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.09896866480326841,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.09559813239886983,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.09255006211350279,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.089776112224275,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.08723751429152027,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.08490276591080353,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.0827459686245007,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.08074560808601929,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.0788836438110287,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.07714481974718196,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.07551613502373666,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.07398643267862698,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.07254607649121704,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.07118669444937588,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.06990097319923831,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.06868249192026774,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.06752558698954525,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.06642524091090081,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.06537699052945344,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.06437685069513108,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.06342125039321411,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.06250697900494227,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.06163114085253366,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.060791116560400864,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.05998453005662678,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.059209220266801595,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.058463216731507374,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.05774471852047325,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.05705207592925466,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.05638377453464787,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.05573842125781883,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.055114732143056684,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.05451152160801754,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.05392769296055346,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.05336223000945499,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.05281418962303714,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 5.047700000261102,
+      "learning": 13.066699999984849,
+      "memory": 105.97850000021936,
+      "entropy": 1.786399999702553,
+      "rendering": 0,
+      "total": 508.49089999993157
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 265.0907745361328,
+        "nodes": 1,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 239.87711334228516,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 244.44742584228516,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 249.00904846191406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 253.5606918334961,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 258.0987777709961,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 262.68860626220703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 267.22867584228516,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 271.7713394165039,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 231.17000579833984,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 235.7161865234375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 240.2895965576172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 244.8370361328125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 249.37200164794922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 253.92880249023438,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 258.4710464477539,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 263.0467987060547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 267.5806884765625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 272.1355895996094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 276.6790008544922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 281.22786712646484,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 285.8089370727539,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 229.37068939208984,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 233.91304779052734,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 238.47237396240234,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 243.01577758789062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 247.57289123535156,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 252.1510772705078,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 256.682373046875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 261.2287063598633,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 265.79002380371094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 270.33898162841797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 274.922119140625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 279.46900939941406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 284.02101135253906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 288.5500717163086,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 229.3839340209961,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 233.95671844482422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 238.50027465820312,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 243.04518127441406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 247.59266662597656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 252.1267547607422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 256.6986083984375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 261.23766326904297,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 265.7845153808594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 270.33033752441406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 274.8738250732422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 279.40765380859375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 283.9912643432617,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 288.52783203125,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 50,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 0,
+        "objective": -0.848528137423857,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.3815717571407001,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.2652374222260261,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.21537174368682466,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.18600846681358799,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.16610014308319376,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.1514639769031729,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.14012031029636288,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.13099491421764278,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.12344783474977492,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.11707095179828425,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.11159008990051142,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.10681332726545346,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.10260176606616189,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.09885207153790088,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.09548556082144748,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.09244112289887824,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.08967047505694782,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.08713489605927657,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.08480292177129937,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.08264868513414206,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.08065069783763468,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.07879094119423131,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.07705417755689985,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.07542742171834481,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.07389953014181232,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.07246087818890071,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.07110310389967948,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.06981890269287094,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.0686018614429976,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.0674463233090698,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.06634727679846568,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.0653002640926871,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.0643013048032713,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.06334683217955517,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.06243363943418943,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.06155883434300835,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.06071980065282958,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.05991416512268032,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.059139769251705956,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.058394644925980885,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.057676993358006835,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.05698516680537672,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.05631765264532747,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.05567305945458806,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.05505010480278492,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.054447604515566385,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.053864463202789176,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.05329966587930213,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.05275227053243591,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 5.84369999984483,
+      "learning": 14.967900000094232,
+      "memory": 162.56660000012198,
+      "entropy": 2.4340999999003543,
+      "rendering": 0,
+      "total": 585.2487000000256
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 251.88823699951172,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 269.76111602783203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 274.30786895751953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 278.8482437133789,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 283.3767547607422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 287.90502166748047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 292.2643051147461,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 254.07930755615234,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 258.61627197265625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 263.1431427001953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 267.6792297363281,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 272.2317199707031,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 276.75585174560547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 281.28636169433594,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 285.8168640136719,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 290.35559844970703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 294.91993713378906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 299.4329299926758,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 303.9660339355469,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 251.60394287109375,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 256.1441650390625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 260.7106399536133,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 265.2466735839844,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 269.7797546386719,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 274.3252868652344,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 278.8538131713867,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 283.3810272216797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 287.9354476928711,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 292.4636764526367,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 296.9874954223633,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 301.53165435791016,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 306.0586471557617,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 310.6094512939453,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 251.3845672607422,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 255.91967010498047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 260.45216369628906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 264.9897003173828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 269.53761291503906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 274.0785675048828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 278.59596252441406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 283.1294631958008,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 287.6599807739258,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 292.2337417602539,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 296.7632064819336,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 301.2960433959961,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 305.83074951171875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 310.34777069091797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 251.13236236572266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 255.7108612060547,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 260.22953033447266,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  },
+  {
+    "seed": 51,
+    "ticks": [
+      {
+        "tick": 0,
+        "nodes": 1,
+        "objective": -0.848528137423857,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 100,
+        "nodes": 0,
+        "objective": 0.3820644964014607,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 200,
+        "nodes": 0,
+        "objective": 0.2655634318490287,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 300,
+        "nodes": 0,
+        "objective": 0.21563222108767793,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 400,
+        "nodes": 0,
+        "objective": 0.18623163435639833,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 500,
+        "nodes": 0,
+        "objective": 0.16629847203746922,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 600,
+        "nodes": 0,
+        "objective": 0.15164425396633585,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 700,
+        "nodes": 0,
+        "objective": 0.14028670689884987,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 800,
+        "nodes": 0,
+        "objective": 0.13115020934011215,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 900,
+        "nodes": 0,
+        "objective": 0.12359398912033827,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1000,
+        "nodes": 0,
+        "objective": 0.1172094097006833,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1100,
+        "nodes": 0,
+        "objective": 0.11172195148386985,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1200,
+        "nodes": 0,
+        "objective": 0.10693945336328704,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1300,
+        "nodes": 0,
+        "objective": 0.10272284524982525,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1400,
+        "nodes": 0,
+        "objective": 0.09896866480326841,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1500,
+        "nodes": 0,
+        "objective": 0.09559813239886983,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1600,
+        "nodes": 0,
+        "objective": 0.09255006211350279,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1700,
+        "nodes": 0,
+        "objective": 0.089776112224275,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1800,
+        "nodes": 0,
+        "objective": 0.08723751429152027,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 1900,
+        "nodes": 0,
+        "objective": 0.08490276591080353,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2000,
+        "nodes": 0,
+        "objective": 0.0827459686245007,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2100,
+        "nodes": 0,
+        "objective": 0.08074560808601929,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2200,
+        "nodes": 0,
+        "objective": 0.0788836438110287,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2300,
+        "nodes": 0,
+        "objective": 0.07714481974718196,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2400,
+        "nodes": 0,
+        "objective": 0.07551613502373666,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2500,
+        "nodes": 0,
+        "objective": 0.07398643267862698,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2600,
+        "nodes": 0,
+        "objective": 0.07254607649121704,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2700,
+        "nodes": 0,
+        "objective": 0.07118669444937588,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2800,
+        "nodes": 0,
+        "objective": 0.06990097319923831,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 2900,
+        "nodes": 0,
+        "objective": 0.06868249192026774,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3000,
+        "nodes": 0,
+        "objective": 0.06752558698954525,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3100,
+        "nodes": 0,
+        "objective": 0.06642524091090081,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3200,
+        "nodes": 0,
+        "objective": 0.06537699052945344,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3300,
+        "nodes": 0,
+        "objective": 0.06437685069513108,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3400,
+        "nodes": 0,
+        "objective": 0.06342125039321411,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3500,
+        "nodes": 0,
+        "objective": 0.06250697900494227,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3600,
+        "nodes": 0,
+        "objective": 0.06163114085253366,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3700,
+        "nodes": 0,
+        "objective": 0.060791116560400864,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3800,
+        "nodes": 0,
+        "objective": 0.05998453005662678,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 3900,
+        "nodes": 0,
+        "objective": 0.059209220266801595,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4000,
+        "nodes": 0,
+        "objective": 0.058463216731507374,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4100,
+        "nodes": 0,
+        "objective": 0.05774471852047325,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4200,
+        "nodes": 0,
+        "objective": 0.05705207592925466,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4300,
+        "nodes": 0,
+        "objective": 0.05638377453464787,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4400,
+        "nodes": 0,
+        "objective": 0.05573842125781883,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4500,
+        "nodes": 0,
+        "objective": 0.055114732143056684,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4600,
+        "nodes": 0,
+        "objective": 0.05451152160801754,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4700,
+        "nodes": 0,
+        "objective": 0.05392769296055346,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4800,
+        "nodes": 0,
+        "objective": 0.05336223000945499,
+        "avgTickMs": 0
+      },
+      {
+        "tick": 4900,
+        "nodes": 0,
+        "objective": 0.05281418962303714,
+        "avgTickMs": 0
+      }
+    ],
+    "profiler": {
+      "physics": 4.965000000218424,
+      "learning": 12.534399999894958,
+      "memory": 159.80159999984244,
+      "entropy": 1.8662000001058914,
+      "rendering": 0,
+      "total": 585.2320999999429
+    },
+    "memoryProfile": [
+      {
+        "tick": 0,
+        "heapUsedMB": 281.49088287353516,
+        "nodes": 1,
+        "snapshots": 0
+      },
+      {
+        "tick": 100,
+        "heapUsedMB": 299.5542526245117,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 200,
+        "heapUsedMB": 304.1225891113281,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 300,
+        "heapUsedMB": 308.6868438720703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 400,
+        "heapUsedMB": 312.91727447509766,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 500,
+        "heapUsedMB": 52.87963104248047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 600,
+        "heapUsedMB": 57.767791748046875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 700,
+        "heapUsedMB": 62.63911437988281,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 800,
+        "heapUsedMB": 67.48909759521484,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 900,
+        "heapUsedMB": 72.3261489868164,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1000,
+        "heapUsedMB": 77.16800689697266,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1100,
+        "heapUsedMB": 82.0284423828125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1200,
+        "heapUsedMB": 86.8795166015625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1300,
+        "heapUsedMB": 91.72006225585938,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1400,
+        "heapUsedMB": 96.56262969970703,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1500,
+        "heapUsedMB": 101.41053771972656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1600,
+        "heapUsedMB": 106.27692413330078,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1700,
+        "heapUsedMB": 111.11050415039062,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1800,
+        "heapUsedMB": 52.377540588378906,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 1900,
+        "heapUsedMB": 57.2110595703125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2000,
+        "heapUsedMB": 62.06365966796875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2100,
+        "heapUsedMB": 66.93730163574219,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2200,
+        "heapUsedMB": 71.77814483642578,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2300,
+        "heapUsedMB": 76.6098403930664,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2400,
+        "heapUsedMB": 81.44891357421875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2500,
+        "heapUsedMB": 86.29978942871094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2600,
+        "heapUsedMB": 91.16564178466797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2700,
+        "heapUsedMB": 96.06127166748047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2800,
+        "heapUsedMB": 100.92787170410156,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 2900,
+        "heapUsedMB": 105.78732299804688,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3000,
+        "heapUsedMB": 110.66462707519531,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3100,
+        "heapUsedMB": 52.246315002441406,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3200,
+        "heapUsedMB": 57.150779724121094,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3300,
+        "heapUsedMB": 62.023231506347656,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3400,
+        "heapUsedMB": 66.8868408203125,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3500,
+        "heapUsedMB": 71.75371551513672,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3600,
+        "heapUsedMB": 76.62408447265625,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3700,
+        "heapUsedMB": 81.50969696044922,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3800,
+        "heapUsedMB": 86.37031555175781,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 3900,
+        "heapUsedMB": 91.24219512939453,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4000,
+        "heapUsedMB": 96.11304473876953,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4100,
+        "heapUsedMB": 100.96326446533203,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4200,
+        "heapUsedMB": 105.85834503173828,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4300,
+        "heapUsedMB": 110.62567901611328,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4400,
+        "heapUsedMB": 51.96068572998047,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4500,
+        "heapUsedMB": 56.59455108642578,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4600,
+        "heapUsedMB": 61.23075866699219,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4700,
+        "heapUsedMB": 65.8623046875,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4800,
+        "heapUsedMB": 70.53331756591797,
+        "nodes": 0,
+        "snapshots": 0
+      },
+      {
+        "tick": 4900,
+        "heapUsedMB": 75.15892791748047,
+        "nodes": 0,
+        "snapshots": 0
+      }
+    ]
+  }
+]
