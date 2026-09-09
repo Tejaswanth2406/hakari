@@ -110,7 +110,8 @@ function ControlRoom() {
   const checkProvider = async () => {
     setHealth((current) => ({ ...current, state: 'checking' }));
     try {
-      const response = await fetch('/api/health');
+      const apiBaseUrl = window.HAKARI_API_BASE_URL ?? '/api';
+      const response = await fetch(`${apiBaseUrl}/health`);
       const data = await response.json();
       setHealth({ state: data.keyConfigured ? 'ready' : 'missing-key', provider: data.provider, model: data.model });
     } catch (error) {

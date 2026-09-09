@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     seed: 42,
 
     llm: {
-      apiBaseUrl: '/api',
+      apiBaseUrl: window.HAKARI_API_BASE_URL ?? '/api',
       provider: LLM_PROVIDER,
       model:    LLM_MODEL,
     },

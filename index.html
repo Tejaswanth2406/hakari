@@ -1340,6 +1340,9 @@
   <script type="module" src="./src/react-main.jsx"></script>
 
   <script>
+    window.HAKARI_API_BASE_URL = window.HAKARI_CONFIG?.API_BASE_URL
+      || (window.location.port === '5173' ? '/api' : 'http://localhost:5000/api');
+
     /* ───────────────────────────────────────────
        UI enhancement script
        Runs independently of main.js
@@ -1659,6 +1662,8 @@
     });
 
     // API key
+    const apiBaseUrl = window.HAKARI_API_BASE_URL;
+
     async function readApiResponse(response) {
       const contentType = response.headers.get('content-type') || '';
       const body = await response.text();
@@ -1693,14 +1698,14 @@
 
         status.textContent = 'Checking key...';
       try {
-          const response = await fetch('/api/provider', {
+          const response = await fetch(`${apiBaseUrl}/provider`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ provider, apiKey })
           });
           const result = await readApiResponse(response);
 
-          const testResponse = await fetch('/api/provider/test', { method: 'POST' });
+          const testResponse = await fetch(`${apiBaseUrl}/provider/test`, { method: 'POST' });
           const testResult = await readApiResponse(testResponse);
           if (!testResult.valid) {
             throw new Error(testResult.error || 'The provider rejected this key');
@@ -1708,7 +1713,7 @@
 
           h.llmConnector.provider = result.provider;
           h.llmConnector.model = result.model;
-          h.llmConnector.apiBaseUrl = '/api';
+          h.llmConnector.apiBaseUrl = apiBaseUrl;
           input.value = '';
           input.placeholder = 'Key verified for this session';
           status.textContent = `${provider.toUpperCase()} key verified`;
