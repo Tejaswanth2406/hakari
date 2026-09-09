@@ -1148,12 +1148,12 @@
       <div class="api-sec">
         <select id="api-provider-select" style="width:100%;margin-bottom:0.3rem;background:rgba(28,26,20,0.06);border:1px solid var(--warm-line);border-bottom:1.5px solid var(--ink3);color:var(--ink);font-family:var(--font-mono);font-size:0.6rem;padding:0.38rem 0.5rem;outline:none;">
           <option value="gemini" selected>Gemini 2.0 Flash ✓</option>
-          <option value="groq">Groq (Free/Fast)</option>
-          <option value="anthropic">Anthropic Claude</option>
           <option value="openai">OpenAI GPT</option>
         </select>
-        <div style="font-size:0.5rem;line-height:1.5;color:var(--ink3);margin-bottom:0.35rem;">KEY STORED SERVER-SIDE · .env</div>
-        <button class="btn gold" id="btn-api-apply">Use Server Provider</button>
+        <input id="api-key-input" type="password" placeholder="Paste provider API key" autocomplete="off" spellcheck="false" />
+        <div style="font-size:0.5rem;line-height:1.5;color:var(--ink3);margin-bottom:0.35rem;">KEY HELD IN BACKEND MEMORY FOR THIS SESSION</div>
+        <button class="btn gold" id="btn-api-apply">Apply Key</button>
+        <div id="api-key-status" style="font-size:0.55rem;line-height:1.5;color:var(--ink3);margin-top:0.35rem;min-height:0.9rem;"></div>
       </div>
 
     </aside>
@@ -1659,13 +1659,45 @@
     });
 
     // API key
-    document.getElementById('btn-api-apply')?.addEventListener('click', () => {
+    document.getElementById('btn-api-apply')?.addEventListener('click', async () => {
       const provider = document.getElementById('api-provider-select')?.value || 'gemini';
+      const input = document.getElementById('api-key-input');
+      const status = document.getElementById('api-key-status');
       const h        = window.__hakari;
-      if (!h) return;
-      h.llmConnector.provider = provider;
-      h.llmConnector.model = h.llmConnector._defaultModel();
-      showNotice(`${provider.toUpperCase()} SERVER PROVIDER SELECTED`);
+      const apiKey = input?.value?.trim();
+      if (!apiKey || !h) {
+        if (status) status.textContent = 'Paste an API key first';
+        return;
+      }
+
+        status.textContent = 'Checking key...';
+      try {
+          const response = await fetch('/api/provider', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ provider, apiKey })
+          });
+          const result = await response.json();
+          if (!response.ok) throw new Error(result.error || 'Key was rejected');
+
+          const testResponse = await fetch('/api/provider/test', { method: 'POST' });
+          const testResult = await testResponse.json();
+          if (!testResponse.ok || !testResult.valid) {
+            throw new Error(testResult.error || 'The provider rejected this key');
+          }
+
+          h.llmConnector.provider = result.provider;
+          h.llmConnector.model = result.model;
+          h.llmConnector.apiBaseUrl = '/api';
+          input.value = '';
+          input.placeholder = 'Key verified for this session';
+          status.textContent = `${provider.toUpperCase()} key verified`;
+          status.style.color = 'var(--sage)';
+          showNotice(`${provider.toUpperCase()} KEY VERIFIED`, 2500);
+      } catch (error) {
+        status.textContent = error.message;
+        status.style.color = 'var(--terra)';
+      }
     });
 
     // ── FPS tracker ───────────────────────────

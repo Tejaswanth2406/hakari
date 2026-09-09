@@ -11,6 +11,21 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const providerConfig = {
+    provider: process.env.LLM_PROVIDER || 'gemini',
+    model: process.env.LLM_MODEL || 'gemini-2.0-flash',
+    apiKey: null,
+};
+
+function getProviderConfig() {
+    const envKey = providerConfig.provider === 'openai'
+        ? process.env.OPENAI_KEY
+        : providerConfig.provider === 'gemini'
+            ? process.env.GEMINI_API_KEY
+            : process.env.LLM_API_KEY;
+    return { ...providerConfig, apiKey: providerConfig.apiKey || envKey };
+}
+
 // ── Live simulation state ───────────────────────────────────────
 const simulationState = {
     tick: 0,
@@ -101,8 +116,9 @@ const Memory = mongoose.model('Memory', memorySchema);
 
 // ── Gemini helper ────────────────────────────────────────────────
 async function callGemini(question) {
-    const key   = process.env.GEMINI_API_KEY;
-    const model = process.env.LLM_MODEL || 'gemini-2.0-flash';
+    const config = getProviderConfig();
+    const key   = config.apiKey;
+    const model = config.model;
     if (!key) throw new Error('GEMINI_API_KEY is missing in hakari-backend/.env');
     const url   = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`;
 
@@ -115,22 +131,43 @@ async function callGemini(question) {
 
 // ── OpenAI helper (fallback) ──────────────────────────────────────
 async function callOpenAI(question) {
-    if (!process.env.OPENAI_KEY) throw new Error('OPENAI_KEY is missing in hakari-backend/.env');
+    const key = getProviderConfig().apiKey;
+    if (!key) throw new Error('An OpenAI API key has not been configured');
     const res = await axios.post(
         'https://api.openai.com/v1/chat/completions',
         {
             model: 'gpt-4o-mini',
             messages: [{ role: 'user', content: question }]
         },
-        { headers: { 'Authorization': `Bearer ${process.env.OPENAI_KEY}` } }
+        { headers: { 'Authorization': `Bearer ${key}` } }
     );
     return res.data.choices[0].message.content;
+}
+
+async function testProviderConfig() {
+    const config = getProviderConfig();
+    if (!config.apiKey) throw new Error('An API key has not been configured');
+
+    if (config.provider === 'gemini') {
+        const response = await axios.post(
+            `https://generativelanguage.googleapis.com/v1beta/models/${config.model}:generateContent?key=${config.apiKey}`,
+            { contents: [{ role: 'user', parts: [{ text: 'Reply with OK.' }] }] },
+            { headers: { 'Content-Type': 'application/json' }, timeout: 15000 }
+        );
+        if (!response.data?.candidates?.[0]) throw new Error('Gemini returned no candidate');
+        return;
+    }
+
+    await axios.get('https://api.openai.com/v1/models', {
+        headers: { Authorization: `Bearer ${config.apiKey}` },
+        timeout: 15000,
+    });
 }
 
 // ── AI endpoint ──────────────────────────────────────────────────
 app.post(['/ask', '/api/ask'], async (req, res) => {
     const { question, user, context } = req.body;
-    const provider = process.env.LLM_PROVIDER || 'gemini';
+    const provider = getProviderConfig().provider;
     const prompt = context ? `${question}\n\nHAKARI CONTEXT:\n${context}` : question;
 
     try {
@@ -149,6 +186,48 @@ app.post(['/ask', '/api/ask'], async (req, res) => {
     } catch (err) {
         console.error('[/ask] error:', err.message);
         res.status(500).json({ error: 'AI call failed', detail: err.message });
+    }
+});
+
+app.post('/api/provider', (req, res) => {
+    const { provider, apiKey, model } = req.body || {};
+    const supportedProviders = ['gemini', 'openai'];
+    const cleanProvider = typeof provider === 'string' ? provider.trim().toLowerCase() : '';
+    const cleanKey = typeof apiKey === 'string' ? apiKey.trim() : '';
+
+    if (!supportedProviders.includes(cleanProvider)) {
+        return res.status(400).json({ error: 'provider must be gemini or openai' });
+    }
+    if (!cleanKey) {
+        return res.status(400).json({ error: 'apiKey is required' });
+    }
+
+    providerConfig.provider = cleanProvider;
+    providerConfig.model = typeof model === 'string' && model.trim()
+        ? model.trim()
+        : cleanProvider === 'gemini' ? 'gemini-2.0-flash' : 'gpt-4o-mini';
+    providerConfig.apiKey = cleanKey;
+
+    res.json({
+        provider: providerConfig.provider,
+        model: providerConfig.model,
+        keyConfigured: true,
+    });
+});
+
+app.post('/api/provider/test', async (req, res) => {
+    try {
+        await testProviderConfig();
+        res.json({ valid: true, provider: getProviderConfig().provider });
+    } catch (error) {
+        const status = error.response?.status;
+        console.error('[/api/provider/test] error:', status || error.message);
+        res.status(400).json({
+            valid: false,
+            error: status === 401 || status === 403
+                ? 'The API key was rejected by the provider'
+                : 'The provider could not be reached or returned an invalid response',
+        });
     }
 });
 
@@ -191,15 +270,12 @@ app.post('/api/metrics/:runtime', async (req, res) => {
 
 // ── Health check ─────────────────────────────────────────────────
 app.get(['/health', '/api/health'], (req, res) => {
-    const provider = process.env.LLM_PROVIDER || 'gemini';
-    const keyConfigured = provider === 'openai'
-        ? Boolean(process.env.OPENAI_KEY)
-        : Boolean(process.env.GEMINI_API_KEY);
+    const config = getProviderConfig();
     res.json({
         status: 'ok',
-        provider,
-        model:    process.env.LLM_MODEL    || 'gemini-2.0-flash',
-        keyConfigured,
+        provider: config.provider,
+        model: config.model,
+        keyConfigured: Boolean(config.apiKey),
     });
 });
 
