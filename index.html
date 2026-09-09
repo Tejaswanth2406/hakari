@@ -1659,6 +1659,27 @@
     });
 
     // API key
+    async function readApiResponse(response) {
+      const contentType = response.headers.get('content-type') || '';
+      const body = await response.text();
+      let result;
+
+      if (contentType.includes('application/json')) {
+        try {
+          result = JSON.parse(body);
+        } catch {
+          throw new Error(`API returned invalid JSON (HTTP ${response.status})`);
+        }
+      } else {
+        throw new Error(response.status === 404 || body.trim().startsWith('<')
+          ? 'HAKARI backend is not running or the API proxy is misconfigured'
+          : `API returned an unexpected response (HTTP ${response.status})`);
+      }
+
+      if (!response.ok) throw new Error(result.error || result.detail || `API request failed (HTTP ${response.status})`);
+      return result;
+    }
+
     document.getElementById('btn-api-apply')?.addEventListener('click', async () => {
       const provider = document.getElementById('api-provider-select')?.value || 'gemini';
       const input = document.getElementById('api-key-input');
@@ -1677,12 +1698,11 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ provider, apiKey })
           });
-          const result = await response.json();
-          if (!response.ok) throw new Error(result.error || 'Key was rejected');
+          const result = await readApiResponse(response);
 
           const testResponse = await fetch('/api/provider/test', { method: 'POST' });
-          const testResult = await testResponse.json();
-          if (!testResponse.ok || !testResult.valid) {
+          const testResult = await readApiResponse(testResponse);
+          if (!testResult.valid) {
             throw new Error(testResult.error || 'The provider rejected this key');
           }
 

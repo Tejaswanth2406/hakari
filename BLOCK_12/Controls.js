@@ -246,13 +246,18 @@ export class Controls {
 
     btn.addEventListener('click', () => {
       const key = input.value.trim();
+      const provider = this._id('api-provider-select')?.value || 'gemini';
 
       if (!key) {
         this._setQueryStatus('⚠ Paste your API key first', 'terra');
         input.focus(); return;
       }
-      if (!key.startsWith('sk-')) {
-        this._setQueryStatus('⚠ Key must start with sk-', 'terra');
+      if (provider === 'openai' && !key.startsWith('sk-')) {
+        this._setQueryStatus('⚠ OpenAI keys must start with sk-', 'terra');
+        return;
+      }
+      if (provider === 'gemini' && !key.startsWith('AIza')) {
+        this._setQueryStatus('⚠ Gemini keys must start with AIza', 'terra');
         return;
       }
 
