@@ -185,10 +185,10 @@ Backend          ──  Node.js            ──  hakari-backend/server.js
 Memory           ──  MongoDB            ──  BSON · Session Memory
                      Snapshots · importantMoments()
 
-Frontend         ──  Vite.js            ──  index.html + vite.config.js
-                     Controls.js · main.js
+Frontend         ──  Vite + React       ──  index.html + src/react-main.jsx
+                     Tailwind CSS · vite.config.js
                      window.__hakari · window.__scheduler
-                     window.__controls · BLOCK_15_UPGRADE
+                     window.__controls · BLOCK_12/BLOCK_15_UPGRADE
 ```
 
 ---
@@ -210,7 +210,7 @@ cd ..
 
 # Set backend environment variables
 cp hakari-backend/.env.example hakari-backend/.env
-# → Add the provider key and MongoDB URI to hakari-backend/.env
+# → Set MONGO_URI and the key for the selected LLM_PROVIDER
 
 # Start the Node.js REST API
 node hakari-backend/server.js
@@ -283,29 +283,43 @@ cargo test --manifest-path rust_engine/Cargo.toml
 
 ```
 hakari/
-├── main.js                   # Engine bootstrap · window.__hakari
-├── BLOCK1.js                 # Mathematical foundations
-├── BLOCK2.js                 # Physics & entropy dynamics
-├── BLOCK3.js                 # Node state management
-├── BLOCK4.js                 # Network evolution
-├── BLOCK5.js                 # Thermodynamics layer
-├── BLOCK6.js                 # Intelligence & decision
-├── BLOCK7.js                 # Evolutionary mechanisms
-├── BLOCK8.js                 # Knowledge diffusion & memory
-├── BLOCK9.js                 # Knowledge synthesis
-├── BLOCK10_Diagnostics.js    # Runtime + visualization
-├── Controls.js               # window.__controls
+├── BLOCK1/                   # Mathematical foundations
+├── BLOCK2/                   # Physics and entropy dynamics
+├── BLOCK3/                   # Node state management
+├── BLOCK4/                   # Network evolution
+├── BLOCK5/                   # Thermodynamics
+├── BLOCK6/                   # Intelligence and decision systems
+├── BLOCK7/                   # Evolutionary mechanisms
+├── BLOCK8/                   # Knowledge diffusion and memory
+├── BLOCK9/                   # Knowledge synthesis
+├── BLOCK_12/                 # Runtime, controls, and visualization
 ├── hakari-backend/
 │   ├── server.js             # Node.js REST API
 │   ├── .env.example          # Server-side provider configuration
 │   └── package.json
-├── python_engine/            # Python knowledge evolution model
-│   ├── simulation_engine.py  # Propagation, decay, and entropy
-│   └── __init__.py
+├── python_engine/            # Python metrics and simulation engine
+├── rust_engine/              # Rust metrics implementation
+├── GHMS/                     # Python memory/profile service
+├── benchmark/                # Benchmark harness and result artifacts
+├── docs/                     # Architecture and developer documentation
+├── src/                      # React entry point and Tailwind styles
 ├── index.html                # Frontend entry point
 ├── vite.config.js            # Vite dev server and API proxy
 └── .env                      # Local secrets (not tracked)
 ```
+
+### Available commands
+
+```bash
+npm run dev          # Start the Vite frontend on port 5173
+npm run build        # Create a production frontend build
+npm run metrics:python
+npm run metrics:rust
+python -m pytest python_engine/tests -q
+```
+
+The backend listens on port 5000. Start it from the repository root with
+`node hakari-backend/server.js`; the frontend forwards `/api` requests to it.
 
 ---
 
